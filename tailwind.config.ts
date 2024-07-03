@@ -10,6 +10,23 @@ const config = {
   ],
   prefix: "",
   theme: {
+    colors:{
+      'white':'#ffffff',
+      'blurple':'rgb(149,6,228)',
+      'purple':'rgba(179,123,164,1)',
+      'orchid':'rgb(249,244,232)',
+      'charcoal':'#353A47',
+      'lavender':'rgb(236,222,232)',
+      'gray-light':'#dedede',
+
+      'black': '#0A0A0A',
+      'primary-payneGray':'#555B6E',
+      'sec-cambridgeBlue':'#89B0AE',
+      'seaSalt':'#FAF9F9',
+      'accent-appricot':'#FFD6BA',
+      'mintGreen':'#BEE3DB',
+      'mnBlue':'#4F5C87'
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -18,6 +35,10 @@ const config = {
       },
     },
     extend: {
+      // gridTemplateRows:{
+      //   3:'repeat(3, 1fr 2fr 1fr)',
+      //   4:'repeat(4, auto)',
+      // },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

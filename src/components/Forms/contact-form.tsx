@@ -1,0 +1,134 @@
+'use client'
+
+import { useState } from 'react'
+import { useForm, SubmitHandler } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { z } from 'zod'
+import { sendEmail } from '@/app/api/_actions'
+import { toast } from 'sonner'
+import { Textarea } from '../ui/textarea'
+import { Button } from '../ui/button'
+
+
+const FormDataSchema = z.object({
+  firstname: z.string().min(1,{message:'First Name is required.'}),
+  lastname: z.string().min(1,{message:'Last Name is required.'}),
+  email: z.string().min(1,{message:'Email is required'}).email('Invalid email.'),
+  services: z.string({ required_error: "Please select a service to display." }),
+  message: z
+    .string()
+    .min(1,{message:'Message is required.'})
+    .min(6, { message: 'Message must be at least 6 characters.' })
+})
+
+type Inputs = z.infer<typeof FormDataSchema>
+
+ function ContactForm() {
+  const [data, setData] = useState<Inputs>()
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting }
+  } = useForm<Inputs>({
+    resolver: zodResolver(FormDataSchema)
+  })
+
+  const processForm: SubmitHandler<Inputs> = async data => {
+    const result = await sendEmail(data)
+
+    if (result?.success) {
+      console.log({ data: result.data })
+      toast.success('Email sent!')
+      reset()
+      return
+    }
+
+     // toast error
+     console.log(result?.error)
+     toast.error('Something went wrong!')
+   }
+
+    
+  
+
+  return (
+    
+      <>      
+      <form
+      onSubmit={handleSubmit(processForm)}
+      className='grid grid-cols-1 md:grid-cols-2 grid-rows-6 md:grid-rows-5 gap-6 space-y-0'
+    >
+{/* firstname */}
+      <div className='md:col-start-1 md:col-end-2'>
+        <input
+          placeholder='FIRST NAME'
+          className=' indent-2.5 h-14 w-full rounded-sm bg-transparent border-t-0 border-x-0 border-b-2 tracking-widest '
+          {...register('firstname')} />
+        {errors.firstname?.message && (
+          <p className='text-sm text-red-400'>{errors.firstname.message}</p>
+        )}
+      </div>
+  {/* lastname */}
+      <div className='md:col-start-2 md:col-end-3'>
+        <input
+          placeholder='LAST NAME'
+          className='indent-2.5 h-14 w-full  rounded-sm border-t-0 border-x-0 border-b-2  tracking-widest '
+          {...register('lastname')} />
+        {errors.lastname?.message && (
+          <p className='text-sm text-red-400 '>{errors.lastname.message}</p>
+        )}  
+      </div>
+
+
+  {/* email */}
+        <div className="md:col-span-2">
+          <input  placeholder="EMAIL" {...register('email')} className="indent-2.5 h-14 w-full rounded-sm bg-transparent border-t-0 border-x-0 border-b-2  tracking-widest " />
+          {errors.email?.message && (
+            <p className='text-sm text-red-400'>{errors.email.message}</p>
+          )}
+        </div>
+    
+
+    {/* services */}
+      <div className='md:col-span-2 md:row-start-3 ' >
+        <select {...register('services')} className='w-full rounded-sm bg-transparent border-t-0 border-x-0 border-b-2  tracking-widest py-4 '>
+          <option value="">--Please choose an service--</option>
+          <option value="Strategic Communications Planning">Strategic Communications Planning</option>
+          <option value="Media Relations and Press Outreach">Media Relations and Press Outreach</option>
+          <option value="Crisis Communication Management">Crisis Communication Management</option>
+          <option value="Diversity, Equity, and Inclusion (DEI) Training and Consulting">Diversity, Equity, and Inclusion (DEI) Training and Consulting</option>
+        </select>
+      </div>
+      {errors.services?.message && (
+        <p className='text-sm text-red-400'>{errors.services.message}</p>
+      )}
+
+      {/* message */}
+      <div className="md:col-span-2 md:row-start-4">
+        <Textarea
+          placeholder='MESSAGE'
+          className='indent-2.5 resize-none rounded-sm bg-transparent border-t-0 border-x-0 border-b-2 tracking-widest'
+          {...register('message')} />
+        {errors.message?.message && (
+          <p className='text-sm text-red-400'>{errors.message.message}</p>
+        )}
+      </div>
+
+  
+          <Button disabled={isSubmitting} className='flex justify-center content-center border-2 rounded-md  h-10 px-4 py-2 w-24 max-w-36  uppercase tracking-widest hover:drop-shadow-lg hover:bg-purple hover:text-white hover:border-0 disabled:cursor-not-allowed text-sm font-medium transition-colors'>
+            {isSubmitting ? 'Submitting...' : 'Submit'}
+          </Button>
+ 
+
+  
+    </form>
+    <div className='flex-1 rounded-lg bg-cyan-600 p-8 '>
+        <pre>{JSON.stringify(data, null, 2)}</pre>
+      </div></>
+
+  )
+}
+
+export default ContactForm
