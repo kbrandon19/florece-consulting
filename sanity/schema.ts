@@ -8,6 +8,7 @@ import { portfolioType } from './schemaTypes/portfolioType'
 import { featuredWorkType } from './schemaTypes/featuredWorkType'
 import { contactType } from './schemaTypes/contactType'
 import { footerType } from './schemaTypes/footerType'
+import { comingsoonType } from './schemaTypes/comingSoonType'
 
 
 //located in SubSchema
@@ -20,5 +21,5 @@ import { socialMediaType } from './schemaTypes/subSchema/socialMediaType'
 
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [hero,header,headerLinks,businessType,servicesType,aboutType,portfolioType,workType,featuredWorkType,featuredType,contactType,footerType,socialMediaType],
+  types: [comingsoonType,hero,header,headerLinks,businessType,servicesType,aboutType,portfolioType,workType,featuredWorkType,featuredType,contactType,footerType,socialMediaType],
 }

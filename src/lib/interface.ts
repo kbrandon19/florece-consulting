@@ -2,6 +2,14 @@
 
 import { Image } from "sanity";
 
+//Coming Soon
+export interface IntroComingSoon{
+  title:string;
+  headline:string;
+  logo:Image;
+}
+
+
 //Header
 
 export interface Navigation {

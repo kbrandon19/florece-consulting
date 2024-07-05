@@ -3,6 +3,7 @@ import Business from "./Business/Business";
 import About from "./About/About";
 import Portfolio from "./Portfolio/Portfolio";
 import Contact from "./Contact/Contact";
+import ComingSoon from './ComingSoon/ComingSoon'
 
 import Services from "../components/Services/Services";
 import FeaturedWork from "./FeaturedWork/FeaturedWork";
@@ -12,16 +13,19 @@ function Page() {
   return (
     <div>
       <Transition>
+      <ComingSoon/> 
+      </Transition>
+      {/* <Transition>
         <Hero />
       </Transition>
-
+     
       <Business />
       <Services />
       <About />
 
       <Portfolio />
       <FeaturedWork />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }

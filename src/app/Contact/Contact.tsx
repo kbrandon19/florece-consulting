@@ -21,7 +21,7 @@ async function Contact() {
   const data: contactSection = await getData();
 
   return (
-    <div className="w-full h-auto py-10 bg-sec-cambridgeBlue">
+    <div className="w-full h-auto py-10 ">
       <div
         id="Contact"
         className="w-5/6 h-auto mx-auto py-5 flex flex-col lg:flex-row gap-4 justify-between "

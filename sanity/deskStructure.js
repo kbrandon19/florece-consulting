@@ -3,6 +3,9 @@ export const deskStructure = (S, context) =>
     .title("Florece Studio")
     .items([
       S.listItem()
+      .title("Coming Soon Page")
+      .child(S.editor().schemaType("comingsoon").documentId("comingsoon")),
+      S.listItem()
         .title("Navigation Section")
         .child(S.editor().schemaType("header").documentId("header")),
       S.listItem()
@@ -40,6 +43,7 @@ export const deskStructure = (S, context) =>
             "featured",
             "contact",
             "footer",
+            'comingsoon'
           ].includes(listItem.getId())
       ),
     ]);
