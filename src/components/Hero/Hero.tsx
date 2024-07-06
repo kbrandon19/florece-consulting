@@ -1,6 +1,8 @@
 import { HeroLanding } from "@/lib/interface";
 import { client } from "../../../sanity/lib/client";
 
+import Transition from "@/transitions/transition";
+
 async function getData() {
   const query = `
   *[_type == 'hero']{
@@ -14,11 +16,13 @@ async function Hero() {
   const data: HeroLanding = await getData();
 
   return (
-    <div className=" w-full  h-[calc(100vh-64)] bg-sec-cambridgeBlue flex justify-center content-center ">
-      <div className="w-5/6 h-auto m-auto my-26 text-left break-words font-semibold max-w-7xl">
-        <p className="hero-text text-seaSalt text-5xl sm:text-6xl lg:text-8xl 2xl:text-9xl drop-shadow-lg">
-          {data.text}
-        </p>
+    <div className=" w-full  h-screen bg-charcoal flex justify-center content-center ">
+      <div className="w-5/6 h-auto m-auto text-center break-words font-semibold max-w-8xl">
+        <Transition>
+          <p className="hero-text text-lavender text-5xl sm:text-6xl lg:text-8xl 2xl:text-9xl drop-shadow-lg">
+            {data.text}
+          </p>
+        </Transition>
       </div>
     </div>
   );

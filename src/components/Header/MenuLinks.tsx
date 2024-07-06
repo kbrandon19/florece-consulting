@@ -20,7 +20,7 @@ async function MenuLinks() {
   const data: Navigation = await getData();
 
   return (
-    <div className="  md:flex flex-row items-center gap-6">
+    <div className="md:flex flex-row items-center gap-6">
       {data.navlinks.map((link: any, idx: any) => (
         <div key={idx} className=" hidden md:flex  text-sm ">
           <Link href={`#${link.linkname}`}>
@@ -28,7 +28,7 @@ async function MenuLinks() {
           </Link>
         </div>
       ))}
-      <Button className=" w-24 border-2 hover:border-0 tracking-wide uppercase text-accent-appricot hover:bg-accent-appricot hover:text-black">
+      <Button className=" w-24 border-2 hover:border-0 border-cambridgeBlue tracking-wide uppercase text-lavender hover:bg-cambridgeBlue hover:text-black">
         <Link href="#Contact">{data.contactBtn}</Link>
       </Button>
     </div>

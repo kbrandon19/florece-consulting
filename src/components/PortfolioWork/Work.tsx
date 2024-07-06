@@ -31,24 +31,27 @@ async function Work() {
 
         {/* card wrapper */}
         {data.workInfo.map((work: any, idx: any) => (
-        <div key={idx} className="h-60 w-full max-w-96">
-          <Card className="border-2 hover:border-0 hover:drop-shadow-xl hover:bg-lavender transition">
-            <CardHeader>
-              <CardTitle>{work.workTitle}</CardTitle>
-              <CardDescription className="italic">{work.publishDate}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>{work.workDescription}</p>
-            </CardContent>
-            <CardFooter>
-            <Button className="h-9 rounded-md px-3 border-2 tracking-wide uppercase hover:drop-shadow-md hover:bg-white bg-lavender ">
-              <a href={work.workLink} target="_blank">See More</a>
-            </Button>
-            </CardFooter>
-            
-          </Card>
-        </div>
-          ))} 
+          <div key={idx} className="h-60 w-full max-w-96">
+            <Card className="border-2 transition hover:drop-shadow-2xl hover:bg-charcoal hover:text-seaSalt">
+              <CardHeader>
+                <CardTitle>{work.workTitle}</CardTitle>
+                <CardDescription className="italic">
+                  {work.publishDate}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p>{work.workDescription}</p>
+              </CardContent>
+              <CardFooter>
+                <Button className="h-9 rounded-md px-3 border-2 tracking-wide uppercase transition">
+                  <a href={work.workLink} target="_blank">
+                    See More
+                  </a>
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+        ))}
 
         {/* {data.workInfo.map((work: any, idx: any) => (
           <div

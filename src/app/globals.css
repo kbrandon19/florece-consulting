@@ -8,42 +8,5 @@ html {
 }
 
 body {
-  
-  background: #fff;
-
-}
-
-/* .services {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(227, 177, 211, 1) 70%,
-    #d99ac5 91%,
-    rgba(179, 123, 164, 1) 100%
-  );
-} */
-
-.workText{
-  background: linear-gradient(
-    265deg,
-    rgba(255, 255, 255, 1),
-    rgba(227, 177, 211, 1),
-    #b37ba4
-  );
-  background-size: 600% 600%;
-  animation: AnimationName 10s ease infinite;
-}
-
-
-
-@keyframes AnimationName {
-  0% {
-    background-position: 84% 0%;
-  }
-  50% {
-    background-position: 17% 100%;
-  }
-  100% {
-    background-position: 84% 0%;
-  }
+  background: #faf9f9;
 }
