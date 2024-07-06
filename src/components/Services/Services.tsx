@@ -2,6 +2,9 @@ import React from "react";
 import { client } from "../../../sanity/lib/client";
 import { Consulting } from "@/lib/interface";
 
+// Icons made by Kiranshastry from Flat Icon at https://www.flaticon.com/authors/kiranshastry
+
+
 async function getData() {
   const query = `
     *[_type == 'business']{
@@ -17,7 +20,7 @@ async function Services() {
   return (
     <div
       id="Services"
-      className="services w-full h-auto -px-5 py-20"
+      className="services w-full h-100vh -px-5 py-20"
     >
       <p className="text-xl md:text-2xl text-center px-5 mb-10 max-w-4xl mx-auto font-light">
         {data.serviceHeadline}

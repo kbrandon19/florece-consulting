@@ -63,7 +63,7 @@ const Transition: React.FC<Props> = ({ children }) => {
         <motion.div
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ ease: "easeIn", duration: 0.75 }}
+          transition={{ ease: "easeIn", duration: 0.75, delay: .3 }}
         >
           {children}
         </motion.div>
