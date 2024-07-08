@@ -7,6 +7,7 @@ import ComingSoon from "./ComingSoon/ComingSoon";
 
 import Services from "../components/Services/Services";
 import FeaturedWork from "./FeaturedWork/FeaturedWork";
+import Banner from '../components/Banner/banner'
 import Transition from "../transitions/transition";
 
 import SpacerMd from "../components/Spacer/Md";
@@ -14,9 +15,16 @@ import SpacerMd from "../components/Spacer/Md";
 function Page() {
   return (
     <div>
-      <ComingSoon />
 
-      {/*   <Hero />
+       <ComingSoon /> 
+
+
+
+    {/* <Hero />
+      <SpacerMd/>
+      <Banner/>
+
+      
 
      <SpacerMd/>
         <Business />
@@ -24,8 +32,6 @@ function Page() {
       <Services />
       <SpacerMd/>
       <About />
-      <SpacerMd/>
-      <Portfolio />
       <SpacerMd/>
       <FeaturedWork />
       <SpacerMd/>

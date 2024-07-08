@@ -26,11 +26,11 @@ async function Work() {
   return (
     <div className="pt-5 pb-5">
       {/* Work samples */}
-      <div className="my-20 h-auto flex flex-wrap justify-center gap-y-5 lg:gap-x-5 ">
+      <div className="my-20 w-auto h-auto flex flex-wrap justify-center gap-y-5 lg:gap-x-5">
         <hr />
 
         {/* card wrapper */}
-        {data.workInfo.map((work: any, idx: any) => (
+        {/* {data.workInfo.map((work: any, idx: any) => (
           <div key={idx} className="h-60 w-full max-w-96">
             <Card className="border-2 transition hover:drop-shadow-2xl hover:bg-charcoal hover:text-seaSalt">
               <CardHeader>
@@ -51,7 +51,25 @@ async function Work() {
               </CardFooter>
             </Card>
           </div>
-        ))}
+        ))} */}
+    {data.workInfo.map((work: any, idx: any) => (
+        <div key={idx} className="h-80 w-80 bg-cambridgeBlue flex justify-end flex-col py-10 px-5 hover:bg-purple transition-colors gap-5"> 
+        <div>
+          <h1 className="text-2xl font-bold">{work.workTitle}</h1>
+          <p className="text-sm">{work.publishDate}</p>
+        </div>
+
+        <div  className="h-auto w-auto">{work.workDescription}</div>
+
+        <div className="w-full h-auto bg-accent-appricot">
+          <Button>Read</Button>
+        </div>
+        </div>
+))}
+       
+        {/* <div className="h-80 w-80 bg-cambridgeBlue">asdfsd</div>
+        <div className="h-80 w-80 bg-cambridgeBlue">asdfsd</div> */}
+
 
         {/* {data.workInfo.map((work: any, idx: any) => (
           <div

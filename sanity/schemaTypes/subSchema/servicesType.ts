@@ -5,6 +5,11 @@ export const servicesType = defineType ({
     title:'services',
     type:'object',
     fields:[
+        {
+            name:'serviceIcon',
+            title:'Service Icon',
+            type:'image'
+        },
        {
             name:'serviceTitle',
             title:'Service Title',

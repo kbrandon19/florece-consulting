@@ -28,6 +28,7 @@ export interface subNav {
 export interface HeroLanding {
   title: string;
   text: string;
+  image:Image;
 }
 
 // Business //
@@ -43,6 +44,7 @@ export interface Consulting {
 }
 
 export interface servicesArr {
+  serviceIcon: Image;
   serviceTitle: string;
   serviceDescription: string;
 }

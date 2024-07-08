@@ -1,12 +1,15 @@
 import { HeroLanding } from "@/lib/interface";
 import { client } from "../../../sanity/lib/client";
+import { urlForImage } from "../../../sanity/lib/image";
+import Image from "next/image";
 
 import Transition from "@/transitions/transition";
 
 async function getData() {
   const query = `
   *[_type == 'hero']{
-    text
+    text,
+    image
   }`;
   const data = await client.fetch(query);
   return data[0];
@@ -16,14 +19,23 @@ async function Hero() {
   const data: HeroLanding = await getData();
 
   return (
-    <div className=" w-full  h-screen bg-charcoal flex justify-center content-center ">
-      <div className="w-5/6 h-auto m-auto text-center break-words font-semibold max-w-8xl">
-        <Transition>
-          <p className="hero-text text-lavender text-5xl sm:text-6xl lg:text-8xl 2xl:text-9xl drop-shadow-lg">
+    <div className="w-full h-screen bg-charcoal flex flex-col items-center content-center justify-center align-center">
+      <Transition>
+        <div className="w-26 flex justify-center items-center">
+          <Image
+            height={100}
+            width={300}
+            src={urlForImage(data.image)}
+            alt="Florece Logo"
+          />
+        </div>
+
+        <div className="align-center w-auto mt-5">
+          <p className=" w-26 text-seaSalt text-3xl md:text-5xl lg:text-7xl 2xl:text-8xl flex justify-center content-center font-medium uppercase drop-shadow-lg tracking-wider">
             {data.text}
           </p>
-        </Transition>
-      </div>
+        </div>
+      </Transition>
     </div>
   );
 }

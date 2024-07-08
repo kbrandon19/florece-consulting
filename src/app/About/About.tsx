@@ -24,7 +24,7 @@ async function About() {
     <div id="About" className="w-full h-auto bg-charcoal my-20 py-20">
       {/* grid wrapper for bio*/}
       <Reveal>
-      <div className="w-5/6 h-auto mx-auto grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-10 ">
+      <div className="w-5/6 h-auto mx-auto grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-20 ">
       
         <div className="w-full h-auto my-2 flex flex-col gap-y-5">
           <h1 className="text-seaSalt text-6xl lg:text-7xl">{data.title}</h1>

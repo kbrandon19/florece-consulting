@@ -34,6 +34,9 @@ async function Business() {
             <h2 className="text-2xl">{data.tagline}</h2>
             <p className="text-lg mt-5">{data.bodyTextOne}</p>
             <p className="hidden xl:block text-lg mt-5 ">{data.bodyTextTwo}</p>
+            
+            {/* Maybe add a third paragraph just in case there is too much text */}
+            {/* <p className="hidden xl:block text-lg mt-5 ">{data.bodyTextTwo}</p> */}
           </div>
 
           <div className=" w-full h-auto md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-3 my-2">
