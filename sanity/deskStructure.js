@@ -6,22 +6,22 @@ export const deskStructure = (S, context) =>
       .title("Coming Soon Page")
       .child(S.editor().schemaType("comingsoon").documentId("comingsoon")),
       S.listItem()
-        .title("Navigation Section")
+        .title("Navigation")
         .child(S.editor().schemaType("header").documentId("header")),
       S.listItem()
         .title("Hero Section")
         .child(S.editor().schemaType("hero").documentId("hero")),
+        S.listItem()
+        .title("Banner Section")
+        .child(S.editor().schemaType("banner").documentId("banner")),
       S.listItem()
-        .title("Consulting Info Section")
+        .title("Florece Info Section")
         .child(S.editor().schemaType("business").documentId("business")),
       S.listItem()
         .title("About Section")
         .child(S.editor().schemaType("about").documentId("about")),
       S.listItem()
-        .title("Work History Section")
-        .child(S.editor().schemaType("portfolio").documentId("portfolio")),
-      S.listItem()
-        .title("Featured Media Section")
+        .title("Publications Section")
         .child(S.editor().schemaType("featured").documentId("featured")),
       S.listItem()
         .title("Contact Section")
@@ -39,11 +39,11 @@ export const deskStructure = (S, context) =>
             "hero",
             "business",
             "about",
-            "portfolio",
             "featured",
             "contact",
             "footer",
-            'comingsoon'
+            'comingsoon',
+            'banner'
           ].includes(listItem.getId())
       ),
     ]);

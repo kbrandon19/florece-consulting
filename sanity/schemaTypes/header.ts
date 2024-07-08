@@ -11,7 +11,7 @@ export const header = defineType({
       type:'string',
       title:'Page Title',
       readOnly:true,
-      initialValue:'Navigation'
+
     }),
     defineField({
       name:'logo',

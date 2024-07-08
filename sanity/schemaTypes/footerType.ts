@@ -8,9 +8,8 @@ export const footerType = defineType({
     defineField({
       name: "title",
       type: "string",
-      title: "",
+      title: "Page Title",
       readOnly: true,
-      initialValue: "Footer Section",
     }),
     defineField({
       name: "footerquote",

@@ -117,8 +117,8 @@ type Inputs = z.infer<typeof FormDataSchema>
       </div>
 
   
-          <Button disabled={isSubmitting} className='flex justify-center content-center border-2 rounded-md  h-10 px-4 py-2 w-24 max-w-36  uppercase tracking-widest hover:drop-shadow-lg hover:bg-purple hover:text-white hover:border-0 disabled:cursor-not-allowed text-sm font-medium transition-colors'>
-            {isSubmitting ? 'Submitting...' : 'Submit'}
+          <Button disabled={isSubmitting} className='flex justify-center content-center border-2 rounded-md  h-10 px-4 py-2 w-24 max-w-44  uppercase tracking-widest hover:drop-shadow-lg hover:bg-purple hover:text-white hover:border-0 disabled:cursor-not-allowed text-sm font-medium transition-colors'>
+            {isSubmitting ? 'Sending...' : 'Submit'}
           </Button>
  
 

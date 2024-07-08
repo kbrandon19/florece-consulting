@@ -31,6 +31,10 @@ export interface HeroLanding {
   image:Image;
 }
 
+//Banner
+export interface Banner{
+  text:string;
+}
 // Business //
 
 export interface Consulting {

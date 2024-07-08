@@ -5,12 +5,13 @@ export const featuredWorkType = defineType({
   title: "Featured Work",
   type: "document",
   fields: [
+
     defineField({
       name: "title",
       type: "string",
-      title: "Featured Media Section",
+      title: "Page Title",
       readOnly: true,
-      initialValue: "Featured Media Section",
+   
     }),
     defineField({
       name: "headlineText",

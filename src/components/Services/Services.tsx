@@ -23,7 +23,7 @@ async function Services() {
   return (
     <div
       id="Services"
-      className="services w-full h-100vh -px-5 py-20"
+      className="services w-full h-100vh"
     >
       <p className="text-xl md:text-2xl text-center px-5 mb-10 max-w-4xl mx-auto font-light">
         {data.serviceHeadline}
@@ -34,22 +34,23 @@ async function Services() {
       {/* services list */}
 
 
-      <div className="w-5/6 h-auto xl:px-5 flex flex-col gap-7 lg:flex-row items-center justify-evenly  mx-auto ">
+      <div className="w-full h-auto xl:px-5 flex flex-wrap gap-5 items-center justify-center  mx-auto ">
         {data.servicesInfo.map((service: any, idx: any) => (
-          <div key={idx} className=" h-96 w-80 bg-cambridgeBlue flex justify-end flex-col py-10 px-5 hover:bg-purple transition-colors gap-5 relative">
-            {/* <div className="w-auto h-auto my-5 flex justify-center lg:justify-start">
+          <div key={idx} className="h-80 w-80 bg-cambridgeBlue flex justify-center lg:justify-start flex-col py-4 lg:py-10 px-5 hover:bg-purple transition-colors gap-5 relative">
+
+            <div className="w-auto h-auto flex justify-center">
             <Image
-              height={40}
-              width={40}
+              height={30}
+              width={30}
               src={urlForImage(service.serviceIcon)}
               alt="image"
              
             />
-            </div> */}
+            </div>
 
 
-            <p className="text-2xl text-center lg:text-left">{service.serviceTitle}</p>
-            <p className="text-base mt-4 font-light text-center lg:text-left ">
+            <p className="text-2xl text-center ">{service.serviceTitle}</p>
+            <p className="text-base font-light text-center ">
               {service.serviceDescription}
             </p>
 

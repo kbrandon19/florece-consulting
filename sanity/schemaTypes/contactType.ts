@@ -10,7 +10,6 @@ export const contactType = defineType({
       type: "string",
       title: "Page Title",
       readOnly: true,
-      initialValue: "Contact Section",
     }),
     defineField({
       name: "contactTitle",
