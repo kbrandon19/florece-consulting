@@ -14,6 +14,7 @@ export interface IntroComingSoon{
 
 export interface Navigation {
   title: string;
+  name:string;
   logo: Image;
   contactBtn: string;
   navlinks: subNav[];

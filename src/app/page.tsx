@@ -8,6 +8,7 @@ import ComingSoon from "./ComingSoon/ComingSoon";
 import Services from "../components/Services/Services";
 import FeaturedWork from "./FeaturedWork/FeaturedWork";
 import Banner from '../components/Banner/banner'
+import Booking from '../components/Booking/booking'
 import Transition from "../transitions/transition";
 
 import SpacerMd from "../components/Spacer/Md";
@@ -23,13 +24,12 @@ function Page() {
     {/* <Hero />
       <SpacerMd/>
       <Banner/>
-
-      
-
      <SpacerMd/>
         <Business />
       <SpacerMd/>
       <Services />
+      <SpacerMd/>
+      <Booking/>
       <SpacerMd/>
       <About />
       <SpacerMd/>

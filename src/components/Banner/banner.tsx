@@ -1,7 +1,7 @@
 import React from 'react'
 import { Banner } from "@/lib/interface";
 import { client } from "../../../sanity/lib/client";
-import {Reveal} from "@/transitions/reveal";
+import {BannerReveal} from "@/transitions/bannerReveal";
 
 async function getData() {
     const query = `
@@ -16,14 +16,13 @@ async function getData() {
 async function banner() {
     const data: Banner = await getData();
   return (
-    <div
-    className="w-full h-auto px-5 py-20"
-  >
-    <Reveal>
-      <p className="text-xl md:text-2xl text-center px-5 max-w-4xl mx-auto font-light">
+    <div className="w-full h-auto px-5 py-20">
+    <BannerReveal>
+      <p className="sm:text-3xl md:text-5xl text-center px-5 max-w-7xl mx-auto font-light italic">
         {data.text}
+        
       </p>
-    </Reveal>
+    </BannerReveal>
     </div>
   )
 }

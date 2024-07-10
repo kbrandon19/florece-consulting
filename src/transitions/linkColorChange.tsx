@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+
 
 interface Props {
   children: React.ReactNode;
@@ -32,13 +31,15 @@ const LinkColor: React.FC<Props> = ({ children }) => {
 
   return (
     
-    <div
-    className={`transition-colors duration-300 ${
-      header ? "border-black text-black" : "border-seaSalt"
-    }`}
-  >
-    {children}
-  </div>
+      <div
+        className={` ${
+          header ? "bg-seaSalt border-charcoal" : "border-seaSalt"
+        }`}
+      >
+       
+          {children}
+     
+      </div>
   
   );
 };

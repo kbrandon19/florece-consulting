@@ -64,7 +64,7 @@ type Inputs = z.infer<typeof FormDataSchema>
       <div className='md:col-start-1 md:col-end-2'>
         <input
           placeholder='FIRST NAME'
-          className=' indent-2.5 h-14 w-full rounded-sm bg-transparent border-t-0 border-x-0 border-b-2 tracking-widest '
+          className=' indent-2.5 h-14 w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2 tracking-widest '
           {...register('firstname')} />
         {errors.firstname?.message && (
           <p className='text-sm text-red-400'>{errors.firstname.message}</p>
@@ -74,7 +74,7 @@ type Inputs = z.infer<typeof FormDataSchema>
       <div className='md:col-start-2 md:col-end-3'>
         <input
           placeholder='LAST NAME'
-          className='indent-2.5 h-14 w-full  rounded-sm border-t-0 border-x-0 border-b-2  tracking-widest '
+          className='indent-2.5 h-14 w-full  bg-seaSalt rounded-sm border-t-0 border-x-0 border-b-2  tracking-widest '
           {...register('lastname')} />
         {errors.lastname?.message && (
           <p className='text-sm text-red-400 '>{errors.lastname.message}</p>
@@ -84,7 +84,7 @@ type Inputs = z.infer<typeof FormDataSchema>
 
   {/* email */}
         <div className="md:col-span-2">
-          <input  placeholder="EMAIL" {...register('email')} className="indent-2.5 h-14 w-full rounded-sm bg-transparent border-t-0 border-x-0 border-b-2  tracking-widest " />
+          <input  placeholder="EMAIL" {...register('email')} className="indent-2.5 h-14 w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2  tracking-widest " />
           {errors.email?.message && (
             <p className='text-sm text-red-400'>{errors.email.message}</p>
           )}
@@ -93,7 +93,7 @@ type Inputs = z.infer<typeof FormDataSchema>
 
     {/* services */}
       <div className='md:col-span-2 md:row-start-3 ' >
-        <select {...register('services')} className='w-full rounded-sm bg-transparent border-t-0 border-x-0 border-b-2  tracking-widest py-4 '>
+        <select {...register('services')} className='w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2  tracking-widest py-4 '>
           <option value="">--Please choose an service--</option>
           <option value="Strategic Communications Planning">Strategic Communications Planning</option>
           <option value="Media Relations and Press Outreach">Media Relations and Press Outreach</option>
@@ -109,7 +109,7 @@ type Inputs = z.infer<typeof FormDataSchema>
       <div className="md:col-span-2 md:row-start-4">
         <Textarea
           placeholder='MESSAGE'
-          className='indent-2.5 resize-none rounded-sm bg-transparent border-t-0 border-x-0 border-b-2 tracking-widest'
+          className='indent-2.5 resize-none rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2 tracking-widest'
           {...register('message')} />
         {errors.message?.message && (
           <p className='text-sm text-red-400'>{errors.message.message}</p>

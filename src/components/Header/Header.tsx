@@ -11,6 +11,7 @@ import Transition from "@/transitions/tranHeader";
 async function getData() {
   const query = `
   *[_type == 'header']{
+    name,
     title,
     logo,
             }`;
@@ -24,21 +25,22 @@ async function Header() {
 
   return (
     <Transition>
-      {/* <div className="w-full h-auto fixed top-0"> */}
+      
       <div className=" py-5 px-5 md:px-16 flex justify-between content-center ">
-        <div className="h-auto flex uppercase tracking-widest items-center ">
+        <div className="h-auto flex lowercase tracking-widest items-center justify-center gap-3 ">
           <Link href="/">
             <Image
-              height={50}
-              width={200}
+              height={35}
+              width={35}
               src={urlForImage(data.logo)}
               alt="Florece Logo"
             />
           </Link>
+        <div className="w-auto h-auto mt-2">{data.name}</div>
         </div>
         <MenuLinks />
       </div>
-      {/* </div> */}
+      
     </Transition>
   );
 }

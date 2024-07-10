@@ -18,6 +18,11 @@ export const header = defineType({
       title:'Brand Logo',
       type:'image'
     }),
+    defineField({
+      name:'name',
+      title:'Brand Name',
+      type:'string'
+    }),
     
     //this section will be an array and reference headerlinks.ts
     defineField({
