@@ -2,12 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 interface Props {
   children: React.ReactNode;
 }
 
-const Transition: React.FC<Props> = ({ children }) => {
+const LinkColor: React.FC<Props> = ({ children }) => {
   const [header, setHeader] = useState(false);
 
   useEffect(() => {
@@ -30,22 +31,16 @@ const Transition: React.FC<Props> = ({ children }) => {
   }, []);
 
   return (
-    <div>
-      <header
-        className={`w-full h-auto fixed top-0 z-10 transition-colors duration-300 ${
-          header ? "bg-seaSalt text-charcoal border-charcoal" : "text-seaSalt bg-transparent"
-        }`}
-      >
-        <motion.div
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ ease: "easeIn", duration: 0.75, delay: .3 }}
-        >
-          {children}
-        </motion.div>
-      </header>
-    </div>
+    
+    <div
+    className={`transition-colors duration-300 ${
+      header ? "border-black text-black" : "border-seaSalt"
+    }`}
+  >
+    {children}
+  </div>
+  
   );
 };
 
-export default Transition;
+export default LinkColor;

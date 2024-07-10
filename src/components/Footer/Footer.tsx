@@ -28,7 +28,7 @@ export default async function Footer() {
         </div>
         <div>
           <p className="uppercase font-bold mb-2">{data.tag}</p>
-          <Link href="mailto:contact@contact.com">{data.email}</Link>
+          <Link href={`mailto:${data.email}`}>{data.email}</Link>
         </div>
         <div>
           <p className="uppercase tracking-wide font-bold mb-2">
