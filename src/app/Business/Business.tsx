@@ -24,10 +24,10 @@ async function Business() {
   const data: Consulting = await getData();
 
   return (
-    <div id="services" className="w-full h-100  px-5">
+    <div id="services" className="w-full h-100">
       {/* grid wrapper for bio*/}
       <Reveal>
-        <div className="w-5/6  h-auto mx-auto px-5 grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-x-10">
+        <div className="w-5/6  h-auto mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-x-10">
           <div className="w-full h-auto my-2 flex flex-col gap-y-5">
             <h1 className="text-5xl">{data.headline}</h1>
 
@@ -43,6 +43,7 @@ async function Business() {
             <Image
               height={700}
               width={500}
+              priority
               src={urlForImage(data.image)}
               alt="image"
               // style={{height:'auto',width:'100%'}}

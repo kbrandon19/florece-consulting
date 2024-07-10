@@ -12,7 +12,7 @@ import {Button} from '@/components/ui/button'
 function booking() {
   return (
     <div className="w-full h-auto bg-lavender my-20 py-20 text-center">
-      <div className="w-5/6 h-auto mx-auto flex flex-col gap-y-2 justify-center content-center font-regular uppercase drop-shadow-lg tracking-wider max-w-screen-lg">
+      <div className="w-5/6 h-auto mx-auto flex flex-col gap-y-2 justify-center content-center font-regular uppercase drop-shadow-lg tracking-wider max-w-screen-md">
         <h1 className="font-semibold text-5xl">
           Ready to amplify your impact?
         </h1>

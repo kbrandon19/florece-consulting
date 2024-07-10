@@ -38,7 +38,12 @@ async function Contact() {
           <Image
             height={1000}
             width={500}
+            // width={0}
+            // height={0}
+            // sizes="100vw"
+            // style={{width:'100%',height:'auto'}}
             src={urlForImage(data.contactImage)}
+            
             alt="image"
           />
         </div>

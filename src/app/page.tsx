@@ -12,6 +12,7 @@ import Booking from '../components/Booking/booking'
 import Transition from "../transitions/transition";
 
 import SpacerMd from "../components/Spacer/Md";
+import SpacerSm from "../components/Spacer/Sm";
 
 function Page() {
   return (
@@ -30,7 +31,7 @@ function Page() {
       <Services />
       <SpacerMd/>
       <Booking/>
-      <SpacerMd/>
+      <SpacerSm/>
       <About />
       <SpacerMd/>
       <FeaturedWork />
