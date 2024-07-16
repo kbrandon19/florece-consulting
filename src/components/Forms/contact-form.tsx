@@ -64,36 +64,36 @@ type Inputs = z.infer<typeof FormDataSchema>
       <div className='md:col-start-1 md:col-end-2'>
         <input
           placeholder='FIRST NAME'
-          className=' indent-2.5 h-14 w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2 tracking-widest '
+          className=' indent-2.5 h-14 w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 '
           {...register('firstname')} />
         {errors.firstname?.message && (
-          <p className='text-sm text-red-400'>{errors.firstname.message}</p>
+          <p className='mt-2 text-sm text-red-400 tracking-widest'>{errors.firstname.message}</p>
         )}
       </div>
   {/* lastname */}
       <div className='md:col-start-2 md:col-end-3'>
         <input
           placeholder='LAST NAME'
-          className='indent-2.5 h-14 w-full  bg-seaSalt rounded-sm border-t-0 border-x-0 border-b-2  tracking-widest '
+          className='indent-2.5 h-14 w-full  bg-seaSalt rounded-sm border-t-0 border-x-0 border-b-2  tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2  '
           {...register('lastname')} />
         {errors.lastname?.message && (
-          <p className='text-sm text-red-400 '>{errors.lastname.message}</p>
+          <p className='mt-2 text-sm text-red-400 tracking-widest'>{errors.lastname.message}</p>
         )}  
       </div>
 
 
   {/* email */}
         <div className="md:col-span-2">
-          <input  placeholder="EMAIL" {...register('email')} className="indent-2.5 h-14 w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2  tracking-widest " />
+          <input  placeholder="EMAIL" {...register('email')} className="indent-2.5 h-14 w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2  tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 " />
           {errors.email?.message && (
-            <p className='text-sm text-red-400'>{errors.email.message}</p>
+            <p className='mt-2 text-sm text-red-400 tracking-widest'>{errors.email.message}</p>
           )}
         </div>
     
 
     {/* services */}
-      <div className='md:col-span-2 md:row-start-3 ' >
-        <select {...register('services')} className='w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2  tracking-widest py-4 '>
+      <div className='md:col-span-2 md:row-start-3'>
+        <select {...register('services')} className='w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2  tracking-widest py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 '>
           <option value="">--Please choose an service--</option>
           <option value="Strategic Communications Planning">Strategic Communications Planning</option>
           <option value="Media Relations and Press Outreach">Media Relations and Press Outreach</option>
@@ -102,17 +102,17 @@ type Inputs = z.infer<typeof FormDataSchema>
         </select>
       </div>
       {errors.services?.message && (
-        <p className='text-sm text-red-400'>{errors.services.message}</p>
+        <p className='mt-2 text-sm text-red-400 tracking-widest'>{errors.services.message}</p>
       )}
 
       {/* message */}
       <div className="md:col-span-2 md:row-start-4">
         <Textarea
           placeholder='MESSAGE'
-          className='indent-2.5 resize-none rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2 tracking-widest'
+          className='indent-2.5 resize-none rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 '
           {...register('message')} />
         {errors.message?.message && (
-          <p className='text-sm text-red-400'>{errors.message.message}</p>
+          <p className='mt-2 text-sm text-red-400 tracking-widest'>{errors.message.message}</p>
         )}
       </div>
 

@@ -19,7 +19,6 @@ const config = {
       seaSalt: "#FAF9F9",
       cambridgeBlue: "#89B0AE",
 
-      blurple: "rgb(149,6,228)",
       purple: "rgba(179,123,164,1)",
       orchid: "rgb(249,244,232)",
       "gray-light": "#dedede",
@@ -27,6 +26,10 @@ const config = {
 
       "accent-appricot": "#FFD6BA",
       mintGreen: "#3AAFB9",
+
+      // Form Colors
+      'red-400':'#EF5350',
+      'blue':'rgb(59 130 246)'
     },
     container: {
       center: true,

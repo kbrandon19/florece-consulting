@@ -27,7 +27,7 @@ async function Header() {
     <Transition>
       
       <div className=" py-5 px-5 md:px-16 flex justify-between content-center ">
-        <div className="h-auto flex lowercase tracking-widest items-center justify-center gap-3 ">
+        <div className="h-auto flex flex-row lowercase tracking-widest items-center justify-center gap-3 ">
           <Link href="/">
             <Image
               height={35}
@@ -35,8 +35,9 @@ async function Header() {
               src={urlForImage(data.logo)}
               alt="Florece Logo"
             />
-          </Link>
+          
         <div className="w-auto h-auto mt-2">{data.name}</div>
+        </Link>
         </div>
         <MenuLinks />
       </div>
