@@ -15,7 +15,7 @@ export const deskStructure = (S, context) =>
         .title("Banner Section")
         .child(S.editor().schemaType("banner").documentId("banner")),
       S.listItem()
-        .title("Florece Info Section")
+        .title("Florece Consulting Bio Section")
         .child(S.editor().schemaType("business").documentId("business")),
       S.listItem()
         .title("About Section")

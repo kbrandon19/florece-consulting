@@ -32,7 +32,7 @@ async function MenuLinks() {
         </div>
       ))}
       <LinkColor>
-      <Button className="w-24 border-2 tracking-wide uppercase hover:bg-accent-appricot hover:border-accent-appricot hover:text-black transition-colors">
+      <Button className="w-24 tracking-wide font-normal border-2 uppercase border-purple hover:drop-shadow-lg hover:bg-purple hover:text-white transition-colors">
         <Link href="#Contact">{data.contactBtn}</Link>
       </Button>
       </LinkColor>

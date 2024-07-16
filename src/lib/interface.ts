@@ -78,21 +78,6 @@ export interface aboutSection {
   image: Image;
 }
 
-// Portfolio //
-
-export interface portfolioWork {
-  portfolioArr: any;
-  headingText: string;
-  workInfo: portfolioArr[];
-}
-
-export interface portfolioArr {
-  workTitle: string;
-  publishDate: string;
-  workDescription: string;
-  workLink: string;
-}
-
 // Featured Media //
 
 export interface featuredMediaSection {

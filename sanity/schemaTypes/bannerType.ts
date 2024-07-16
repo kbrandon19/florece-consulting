@@ -5,7 +5,12 @@ export const bannerType = defineType({
   title: "Banner",
   type: "document",
   fields: [
-
+    defineField({
+      name:'title',
+      type:'string',
+      title:'Page Title',
+      readOnly:true,
+    }),
     defineField({
       name: "text",
       title: "Text",

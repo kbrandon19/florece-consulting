@@ -18,18 +18,21 @@ const config = {
       lavender: "rgb(236,222,232)",
       seaSalt: "#FAF9F9",
       cambridgeBlue: "#89B0AE",
-
       purple: "rgba(179,123,164,1)",
-      orchid: "rgb(249,244,232)",
-      "gray-light": "#dedede",
-      "primary-payneGray": "#555B6E",
 
-      "accent-appricot": "#FFD6BA",
+      
       mintGreen: "#3AAFB9",
 
       // Form Colors
       'red-400':'#EF5350',
       'blue':'rgb(59 130 246)'
+
+
+      // orchid: "rgb(249,244,232)",
+      // "gray-light": "#dedede",
+      // "primary-payneGray": "#555B6E",
+
+      // "accent-appricot": "#FFD6BA",
     },
     container: {
       center: true,

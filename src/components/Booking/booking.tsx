@@ -26,7 +26,7 @@ function booking() {
       <div className="w-5/6 h-auto mx-auto flex justify-center items-center mt-10">
         <Dialog>
           <DialogTrigger asChild>
-            <Button className="bg-purple text-seaSalt uppercase tracking-wide hover:bg-charcoal transition-colors">Book a consultation call</Button>
+            <Button className="bg-purple text-seaSalt uppercase tracking-wide hover:bg-lavender hover:border-2 hover:drop-shadow-lg hover:border-purple hover:text-black ">Book a consultation call</Button>
             </DialogTrigger>
           <DialogContent className="max-w-screen-xl">
             <iframe src='https://calendar.google.com/calendar/appointments/schedules/AcZssZ2GOnYpAfbbxKh_yat5FyvpsP9z0PRS5G0rWwR-9q3_Bkd1CjjJtB9LOeg2Y7l1gz7FPKvlA9T3?gv=true' loading="lazy"

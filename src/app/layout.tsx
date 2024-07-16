@@ -26,13 +26,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        {/* <Header/> */}
+        <Header/>
 
         <Providers>
           {children}
           <SpeedInsights />
         </Providers>
-        {/* <Footer/> */}
+        <Footer/>
       </body>
     </html>
   );

@@ -1,3 +1,4 @@
+import { flightRouterStateSchema } from "next/dist/server/app-render/types";
 import { defineField, defineType } from "sanity";
 
 export const businessType = defineType ({
@@ -10,7 +11,6 @@ export const businessType = defineType ({
             type:'string',
             title:'Page Title',
             readOnly:true,
-      
           }),
         defineField({
         name:'image',

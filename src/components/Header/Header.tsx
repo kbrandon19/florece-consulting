@@ -34,10 +34,14 @@ async function Header() {
               width={35}
               src={urlForImage(data.logo)}
               alt="Florece Logo"
-            />
+            /></Link>
           
-        <div className="w-auto h-auto mt-2">{data.name}</div>
+        <div className="w-auto h-auto mt-2">
+        <Link href="/">
+        {data.name}
         </Link>
+        </div>
+        
         </div>
         <MenuLinks />
       </div>

@@ -5,7 +5,6 @@ export const aboutType = defineType({
   title: "About",
   type: "document",
   fields: [
-
     defineField({
       name: "title",
       title: "Title",

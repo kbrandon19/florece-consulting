@@ -11,26 +11,24 @@ export const header = defineType({
       type:'string',
       title:'Page Title',
       readOnly:true,
-
     }),
     defineField({
       name:'logo',
       title:'Brand Logo',
-      type:'image'
+      type:'image',
+      description:'optional'
     }),
     defineField({
       name:'name',
       title:'Brand Name',
-      type:'string'
+      type:'string',
+      description:'optional'
     }),
-    
-    //this section will be an array and reference headerlinks.ts
     defineField({
       name:'navlinks',
       title:'Navigation Links',
       type:'array',
       of:[{type:'link'}]
-
     }),
     defineField({
       name:'contactBtn',
