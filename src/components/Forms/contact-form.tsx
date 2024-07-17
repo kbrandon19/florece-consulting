@@ -58,7 +58,7 @@ type Inputs = z.infer<typeof FormDataSchema>
       <>      
       <form
       onSubmit={handleSubmit(processForm)}
-      className='grid grid-cols-1 md:grid-cols-2 grid-rows-6 md:grid-rows-5 gap-6 space-y-0'
+      className='grid grid-cols-1 md:grid-cols-2 grid-rows-6 md:grid-rows-5 gap-4 space-y-0'
     >
 {/* firstname */}
       <div className='md:col-start-1 md:col-end-2'>
