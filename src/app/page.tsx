@@ -1,7 +1,6 @@
 import Hero from "../components/Hero/Hero";
 import Business from "./Business/Business";
 import About from "./About/About";
-import Portfolio from "./Portfolio/Portfolio";
 import Contact from "./Contact/Contact";
 import ComingSoon from "./ComingSoon/ComingSoon";
 
