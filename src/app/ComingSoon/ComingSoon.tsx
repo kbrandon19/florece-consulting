@@ -36,7 +36,7 @@ async function ComingSoon() {
         </div>
 
         <div className="align-center w-auto">
-          <p className=" w-26 text-seaSalt text-2xl md:text-5xl lg:text-7xl flex justify-center content-center font-medium uppercase drop-shadow-lg tracking-wider">
+          <p className=" w-26 text-seaSalt text-2xl md:text-5xl lg:text-7xl flex justify-center content-center font-medium lowercase drop-shadow-lg tracking-wider">
             {data.title}
           </p>
         </div>

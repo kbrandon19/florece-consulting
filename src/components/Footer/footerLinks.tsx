@@ -1,7 +1,4 @@
 import React from "react";
-import Link from "next/link";
-
-
 import { client } from "../../../sanity/lib/client";
 import { FooterSec } from "@/lib/interface";
 import Image from "next/image";
@@ -11,7 +8,7 @@ async function getData() {
   const query = `
   *[_type == 'footer'][0]{
     socialMedia[]{name,url,icon}
-            }`;
+  }`;
 
   const data = await client.fetch(query);
   return data;

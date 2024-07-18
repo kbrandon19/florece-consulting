@@ -29,7 +29,6 @@ export const Reveal = ({ children }: Props) => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         {children}
-        
       </motion.div>
     </div>
   );

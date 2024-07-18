@@ -12,16 +12,13 @@ const config = {
   theme: {
     colors: {
       white: "#ffffff",
-      black: "#0A0A0A",
-
-      charcoal: "#353A47",
-      lavender: "rgb(236,222,232)",
       seaSalt: "#FAF9F9",
+      black: "#0A0A0A",
+      charcoal: "#353A47",
+      lavender: "#ECDEE8",
       cambridgeBlue: "#89B0AE",
-      purple: "rgba(179,123,164,1)",
-
-      
       mintGreen: "#3AAFB9",
+      purple: "#E0A1D1",
 
       // Form Colors
       'red-400':'#EF5350',
@@ -29,9 +26,6 @@ const config = {
 
 
       // orchid: "rgb(249,244,232)",
-      // "gray-light": "#dedede",
-      // "primary-payneGray": "#555B6E",
-
       // "accent-appricot": "#FFD6BA",
     },
     container: {

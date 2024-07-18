@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 
-
 interface Props {
   children: React.ReactNode;
 }
@@ -30,17 +29,11 @@ const LinkColor: React.FC<Props> = ({ children }) => {
   }, []);
 
   return (
-    
-      <div
-        className={` ${
-          header ? "bg-seaSalt border-charcoal" : "border-seaSalt"
-        }`}
-      >
-       
-          {children}
-     
-      </div>
-  
+    <div
+      className={` ${header ? "bg-seaSalt border-charcoal" : "border-seaSalt"}`}
+    >
+      {children}
+    </div>
   );
 };
 

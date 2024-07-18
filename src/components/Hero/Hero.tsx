@@ -2,7 +2,6 @@ import { HeroLanding } from "@/lib/interface";
 import { client } from "../../../sanity/lib/client";
 import { urlForImage } from "../../../sanity/lib/image";
 import Image from "next/image";
-
 import Transition from "@/transitions/transition";
 
 async function getData() {

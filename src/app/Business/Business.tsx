@@ -3,7 +3,6 @@ import { client } from "../../../sanity/lib/client";
 import { urlForImage } from "../../../sanity/lib/image";
 import Image from "next/image";
 import { Consulting } from "@/lib/interface";
-
 import { Reveal } from "../../transitions/reveal";
 
 async function getData() {
@@ -14,7 +13,6 @@ async function getData() {
         bodyTextOne,
         bodyTextTwo,
         'image':image.asset->url,
-      
         }`;
   const data = await client.fetch(query);
   return data;
@@ -24,8 +22,7 @@ async function Business() {
   const data: Consulting = await getData();
 
   return (
-    <div id="services" className="w-full h-100">
-      {/* grid wrapper for bio*/}
+    <div id="About" className="w-full h-100">
       <Reveal>
         <div className="w-5/6  h-auto mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-x-10">
           <div className="w-full h-auto my-2 flex flex-col gap-y-5">
@@ -34,9 +31,6 @@ async function Business() {
             <h2 className="text-2xl">{data.tagline}</h2>
             <p className="text-lg mt-5">{data.bodyTextOne}</p>
             <p className="hidden xl:block text-lg mt-5 ">{data.bodyTextTwo}</p>
-            
-            {/* Maybe add a third paragraph just in case there is too much text */}
-            {/* <p className="hidden xl:block text-lg mt-5 ">{data.bodyTextTwo}</p> */}
           </div>
 
           <div className=" w-full h-auto md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-3 my-2">
@@ -46,7 +40,6 @@ async function Business() {
               priority
               src={urlForImage(data.image)}
               alt="image"
-              // style={{height:'auto',width:'100%'}}
             />
           </div>
 

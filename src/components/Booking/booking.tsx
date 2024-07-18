@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import {Button} from '@/components/ui/button'
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 function booking() {
   return (
@@ -26,13 +19,18 @@ function booking() {
       <div className="w-5/6 h-auto mx-auto flex justify-center items-center mt-10">
         <Dialog>
           <DialogTrigger asChild>
-            <Button className="bg-purple text-seaSalt uppercase tracking-wide hover:bg-lavender hover:border-2 hover:drop-shadow-lg hover:border-purple hover:text-black ">Book a consultation call</Button>
-            </DialogTrigger>
+            <Button className="bg-charcoal text-seaSalt uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt hover:bg-purple transition-colors">
+              Book a consultation call
+            </Button>
+          </DialogTrigger>
           <DialogContent className="max-w-screen-xl">
-            <iframe src='https://calendar.google.com/calendar/appointments/schedules/AcZssZ2GOnYpAfbbxKh_yat5FyvpsP9z0PRS5G0rWwR-9q3_Bkd1CjjJtB9LOeg2Y7l1gz7FPKvlA9T3?gv=true' loading="lazy"
-            allowFullScreen= {true} width="100%" height="700" >
-
-            </iframe>
+            <iframe
+              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2GOnYpAfbbxKh_yat5FyvpsP9z0PRS5G0rWwR-9q3_Bkd1CjjJtB9LOeg2Y7l1gz7FPKvlA9T3?gv=true"
+              loading="lazy"
+              allowFullScreen={true}
+              width="100%"
+              height="700"
+            ></iframe>
           </DialogContent>
         </Dialog>
       </div>

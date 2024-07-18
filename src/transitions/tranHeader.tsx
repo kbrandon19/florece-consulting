@@ -33,7 +33,7 @@ const Transition: React.FC<Props> = ({ children }) => {
     <div>
       <header
         className={`w-full h-auto fixed top-0 z-10 transition-colors duration-300 ${
-          header ? "bg-seaSalt text-charcoal border-charcoal" : "text-seaSalt bg-transparent"
+          header ? "bg-seaSalt text-charcoal border-charcoal drop-shadow-md" : "text-seaSalt bg-transparent"
         }`}
       >
         <motion.div
