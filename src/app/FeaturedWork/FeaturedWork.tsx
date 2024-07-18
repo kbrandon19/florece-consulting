@@ -3,6 +3,7 @@ import { client } from "../../../sanity/lib/client";
 import Image from "next/image";
 import { featuredMediaSection } from "@/lib/interface";
 import { urlForImage } from "../../../sanity/lib/image";
+import { Reveal } from "@/transitions/reveal";
 
 async function getData() {
   const query = `
@@ -20,10 +21,12 @@ async function FeaturedWork() {
 
   return (
     <div className=" w-5/6 h-auto mx-auto text-center">
+      <Reveal>
       <h1 className="italic text-5xl lg:text-6xl my-6 capitalize break-words font-regular">
         {data.headlineText}
       </h1>
-
+  </Reveal>
+  <Reveal>
       <div className=" max-w-screen-lg mx-auto flex-wrap flex flex-row justify-center gap-10 items-center">
         {data.mediaSource.map((media: any, idx: any) => (
           <div key={idx} className="h-auto w-auto p-2 content-center">
@@ -40,6 +43,7 @@ async function FeaturedWork() {
           </div>
         ))}
       </div>
+      </Reveal>
     </div>
   );
 }

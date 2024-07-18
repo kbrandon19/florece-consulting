@@ -10,6 +10,7 @@ import Banner from '../components/Banner/banner'
 import Booking from '../components/Booking/booking'
 import Transition from "../transitions/transition";
 
+import SpacerLg from "../components/Spacer/Lg";
 import SpacerMd from "../components/Spacer/Md";
 import SpacerSm from "../components/Spacer/Sm";
 
@@ -22,15 +23,15 @@ function Page() {
 
 
     {/* <Hero />
-      <SpacerMd/>
+      <SpacerLg/>
       <Banner/>
-     <SpacerMd/>
+     <SpacerLg/>
         <Business />
-      <SpacerMd/>
+      <SpacerLg/>
       <Services />
       <SpacerMd/>
       <Booking/>
-      <SpacerSm/>
+      <SpacerMd/>
       <About />
       <SpacerMd/>
       <FeaturedWork />

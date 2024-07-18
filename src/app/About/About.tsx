@@ -23,7 +23,9 @@ async function About() {
   return (
     <div id="Bio" className="w-full h-auto bg-charcoal -mt-18 py-20">
       <Reveal>
-        <div className="w-5/6 h-auto mx-auto grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-20 ">
+
+        {/* current version */}
+        {/* <div className="w-5/6 h-auto mx-auto grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-20 ">
           <div className="w-full h-auto my-2 flex flex-col gap-y-5">
             <h1 className="text-seaSalt text-6xl lg:text-7xl">{data.title}</h1>
             <Image
@@ -48,6 +50,30 @@ async function About() {
               className="hidden lg:block"
               // style={{display:hidden lg:block}}
             />
+          </div>
+        </div> */}
+
+        {/* new version */}
+        <div className="w-5/6  h-auto mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-x-10">
+          <div className="w-full h-auto my-2 flex flex-col gap-y-5">
+          <h1 className="text-seaSalt text-6xl lg:text-7xl">{data.title}</h1>
+            <p className="text-seaSalt text-lg mt-5">{data.bodyTextOne}</p>
+            <p className="hidden xl:block text-seaSalt text-lg mt-5 ">{data.bodyTextTwo}</p>
+          </div>
+
+          <div className=" w-full h-auto md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-3 my-2">
+            <Image
+              height={900}
+              width={600}
+              priority
+              src={urlForImage(data.image)}
+              alt="image"
+          
+            />
+          </div>
+
+          <div className="md:col-span-2 md:col-start-1 xl:hidden">
+            <p className="text-seaSalt text-lg mt-5">{data.bodyTextTwo}</p>
           </div>
         </div>
       </Reveal>

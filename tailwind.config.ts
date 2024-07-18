@@ -17,7 +17,6 @@ const config = {
       charcoal: "#353A47",
       lavender: "#ECDEE8",
       cambridgeBlue: "#89B0AE",
-      mintGreen: "#3AAFB9",
       purple: "#E0A1D1",
 
       // Form Colors
