@@ -53,6 +53,13 @@ export interface servicesArr {
   serviceTitle: string;
   serviceDescription: string;
 }
+
+//Symbolism
+export interface Symbol {
+  title: string;
+  text: string;
+  image: Image;
+}
 // Footer //
 
 export interface FooterSec {

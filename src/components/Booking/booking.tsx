@@ -19,9 +19,10 @@ function booking() {
       <div className="w-5/6 h-auto mx-auto flex justify-center items-center mt-10">
         <Dialog>
           <DialogTrigger asChild>
-            <Button className="bg-charcoal text-seaSalt uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt hover:bg-purple transition-colors">
+            {/* <Button className="bg-charcoal text-seaSalt uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt hover:bg-purple transition-colors">
               Book a consultation call
-            </Button>
+            </Button> */}
+            <Button className="border-2 border-charcoal text-seaSalt rounded-none hover:rounded-lg hover:border-purple uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt bg-charcoal hover:bg-purple transition-all">Book a consultation call</Button>
           </DialogTrigger>
           <DialogContent className="max-w-screen-xl">
             <iframe

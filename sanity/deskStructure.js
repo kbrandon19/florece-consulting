@@ -17,6 +17,9 @@ export const deskStructure = (S, context) =>
       S.listItem()
         .title("Florece Consulting Bio Section")
         .child(S.editor().schemaType("business").documentId("business")),
+        S.listItem()
+        .title("Vision and Symbol Logo")
+        .child(S.editor().schemaType("symbolism").documentId("symbolism")),
       S.listItem()
         .title("About Section")
         .child(S.editor().schemaType("about").documentId("about")),
@@ -38,6 +41,7 @@ export const deskStructure = (S, context) =>
             "header",
             "hero",
             "business",
+            "symbolism",
             "about",
             "featured",
             "contact",

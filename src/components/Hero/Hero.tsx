@@ -22,13 +22,14 @@ async function Hero() {
       <Transition>
         <div className="w-26 flex justify-center items-center">
           <Image
-            height={100}
+            height={200}
             width={300}
             src={urlForImage(data.image)}
             alt="Florece Logo"
           />
         </div>
-
+        </Transition>
+        <Transition>
         <div className="align-center w-auto mt-5">
           <h1 className=" w-26 text-seaSalt text-3xl md:text-5xl lg:text-7xl 2xl:text-9xl flex justify-center content-center font-medium lowercase drop-shadow-lg tracking-wider">
             {data.text}

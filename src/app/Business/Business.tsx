@@ -2,7 +2,9 @@ import React from "react";
 import { client } from "../../../sanity/lib/client";
 import { urlForImage } from "../../../sanity/lib/image";
 import Image from "next/image";
+import Link from "next/link";
 import { Consulting } from "@/lib/interface";
+import { Button } from "@/components/ui/button";
 import { Reveal } from "../../transitions/reveal";
 
 async function getData() {
@@ -31,6 +33,11 @@ async function Business() {
             <h2 className="text-2xl">{data.tagline}</h2>
             <p className="text-lg mt-5">{data.bodyTextOne}</p>
             <p className="hidden xl:block text-lg mt-5 ">{data.bodyTextTwo}</p>
+
+            <div className="hidden xl:block w-64 h-auto my-5">
+              <Button className="border-2 border-charcoal text-charcoal rounded-none hover:rounded-lg hover:border-purple uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt hover:bg-purple transition-all"><Link href='/Symbolism'>More about Florece</Link></Button>
+              
+            </div>
           </div>
 
           <div className=" w-full h-auto md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-3 my-2">
@@ -45,6 +52,10 @@ async function Business() {
 
           <div className="md:col-span-2 md:col-start-1 xl:hidden">
             <p className="text-lg mt-5 ">{data.bodyTextTwo}</p>
+            <div className="w-64 h-auto my-5">
+              <Button className="bg-charcoal text-seaSalt uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt hover:bg-purple transition-colors"><Link href='/Symbolism'>leearn more click here</Link></Button>
+              
+            </div>
           </div>
         </div>
       </Reveal>

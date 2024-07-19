@@ -20,8 +20,6 @@ function Page() {
 
        <ComingSoon /> 
 
-
-
     {/* <Hero />
       <SpacerLg/>
       <Banner/>
