@@ -17,8 +17,8 @@ export default async function Footer() {
   const data: FooterSec = await getData();
 
   return (
-    <div className="h-auto w-full mt-12 bg-charcoal pt-12">
-      <div className="w-5/6 h-auto mx-auto py-5 text-seaSalt flex flex-wrap flex-col md:grid-cols-3 xl:flex-row  justify-center lg:gap-x-16 xl:gap-x-36 xlg:justify-evenly gap-y-8 xl:gap-y-0">
+    <div className="h-auto w-full mt-12 bg-seaSalt pt-12">
+      <div className="w-5/6 h-auto mx-auto py-5 text-black flex flex-wrap flex-col md:grid-cols-3 xl:flex-row  justify-center lg:gap-x-16 xl:gap-x-36 xlg:justify-evenly gap-y-8 xl:gap-y-0">
         <div className="min-w-64 max-w-72 uppercase lg:text-lg">
           <p className="uppercase">{data.footerquote}</p>
         </div>
@@ -41,7 +41,7 @@ export default async function Footer() {
         </div>
       </div>
 
-      <div className="w-5/6 h-auto mx-auto py-5 xl:text-center text-seaSalt">
+      <div className="w-5/6 h-auto mx-auto py-5 xl:text-center text-black">
         <p className="text-xs">
           2024 Copyright All Rights Reserved. <br className="md:hidden" />
           <Link href="https://www.dfcreativestudio.com">Website by DFCS</Link>

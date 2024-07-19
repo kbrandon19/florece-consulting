@@ -62,7 +62,7 @@ function ContactForm() {
         <div className="md:col-start-1 md:col-end-2">
           <input
             placeholder="FIRST NAME"
-            className=" indent-2.5 h-14 w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
+            className=" indent-2.5 h-14 w-full rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
             {...register("firstname")}
           />
           {errors.firstname?.message && (
@@ -75,7 +75,7 @@ function ContactForm() {
         <div className="md:col-start-2 md:col-end-3">
           <input
             placeholder="LAST NAME"
-            className="indent-2.5 h-14 w-full  bg-seaSalt rounded-sm border-t-0 border-x-0 border-b-2  tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2  "
+            className="indent-2.5 h-14 w-full  bg-charcoal rounded-sm border-t-0 border-x-0 border-b-2  tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2  "
             {...register("lastname")}
           />
           {errors.lastname?.message && (
@@ -90,7 +90,7 @@ function ContactForm() {
           <input
             placeholder="EMAIL"
             {...register("email")}
-            className="indent-2.5 h-14 w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2  tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
+            className="indent-2.5 h-14 w-full rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2  tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
           />
           {errors.email?.message && (
             <p className="mt-2 text-sm text-red-400 tracking-widest">
@@ -103,7 +103,7 @@ function ContactForm() {
         <div className="md:col-span-2 md:row-start-3">
           <select
             {...register("services")}
-            className="w-full rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2  tracking-widest py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
+            className="w-full rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2  tracking-widest py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
           >
             <option value="">--Please choose an service--</option>
             <option value="Strategic Communications Planning">
@@ -130,7 +130,7 @@ function ContactForm() {
         <div className="md:col-span-2 md:row-start-4">
           <Textarea
             placeholder="MESSAGE"
-            className="indent-2.5 resize-none rounded-sm bg-seaSalt border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
+            className="indent-2.5 resize-none rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
             {...register("message")}
           />
           {errors.message?.message && (
@@ -142,7 +142,7 @@ function ContactForm() {
 
         <Button
           disabled={isSubmitting}
-          className="flex justify-center content-center border-2 rounded-md  h-10 px-4 py-2 w-24 max-w-44  uppercase tracking-widest hover:drop-shadow-lg hover:bg-purple hover:text-white hover:border-0 disabled:cursor-not-allowed text-sm font-medium transition-colors"
+          className="flex justify-center content-center border-2 rounded-md h-10 px-4 py-2 w-24 max-w-44  uppercase tracking-widest hover:drop-shadow-lg hover:bg-purple hover:text-white hover:border-0 disabled:cursor-not-allowed text-sm font-medium transition-colors"
         >
           {isSubmitting ? "Sending..." : "Submit"}
         </Button>

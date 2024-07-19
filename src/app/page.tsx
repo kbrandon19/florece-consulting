@@ -35,8 +35,9 @@ function Page() {
       <About />
       <SpacerMd/>
       <FeaturedWork />
-      <SpacerMd/>
-      <Contact /> */}
+      <SpacerLg/>
+      <Contact />
+      <SpacerSm/> */}
     </div>
   );
 }
