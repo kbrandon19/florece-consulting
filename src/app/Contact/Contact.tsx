@@ -41,6 +41,7 @@ async function Contact() {
             width={500}
             src={urlForImage(data.contactImage)}
             alt="image"
+            priority
           />
         </div>
       </div>

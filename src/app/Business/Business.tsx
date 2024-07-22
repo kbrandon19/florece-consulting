@@ -44,9 +44,13 @@ async function Business() {
             <Image
               height={700}
               width={500}
+              // height={0}
+              // width={0}
               priority
               src={urlForImage(data.image)}
               alt="image"
+              sizes="100vw"
+              style={{width:'70%',height:'auto'}}
             />
           </div>
 

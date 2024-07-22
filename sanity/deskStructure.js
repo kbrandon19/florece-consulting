@@ -15,13 +15,13 @@ export const deskStructure = (S, context) =>
         .title("Banner Section")
         .child(S.editor().schemaType("banner").documentId("banner")),
       S.listItem()
-        .title("Florece Consulting Bio Section")
+        .title("Florece Consulting About Section")
         .child(S.editor().schemaType("business").documentId("business")),
         S.listItem()
         .title("Vision and Symbol Logo")
         .child(S.editor().schemaType("symbolism").documentId("symbolism")),
       S.listItem()
-        .title("About Section")
+        .title("Bio Section")
         .child(S.editor().schemaType("about").documentId("about")),
       S.listItem()
         .title("Publications Section")

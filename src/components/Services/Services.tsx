@@ -27,7 +27,7 @@ async function Services() {
           {data.serviceHeadline}
         </p>
       
-      <hr className="w-96 h-2 align-center mx-auto my-16" />
+      <hr className="max-w-96 h-2 align-center mx-auto my-16" />
       
         <div className="w-full h-auto xl:px-5 flex flex-wrap gap-5 items-center justify-center  mx-auto ">
           {data.servicesInfo.map((service: any, idx: any) => (

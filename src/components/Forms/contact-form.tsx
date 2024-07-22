@@ -130,7 +130,7 @@ function ContactForm() {
         <div className="md:col-span-2 md:row-start-4">
           <Textarea
             placeholder="MESSAGE"
-            className="indent-2.5 resize-none rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
+            className="indent-2.5 px-0 resize-none rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
             {...register("message")}
           />
           {errors.message?.message && (
@@ -142,7 +142,7 @@ function ContactForm() {
 
         <Button
           disabled={isSubmitting}
-          className="flex justify-center content-center h-10 px-4 py-2 w-24 max-w-44 uppercase tracking-widest disabled:cursor-not-allowed text-sm font-normal rounded-none hover:rounded-lg border-2 bg-transparent border-purple hover:drop-shadow-lg hover:bg-purple hover:text-white transition-all"
+          className="flex justify-center content-center h-10 px-4 py-2 w-24 mt-10 max-w-44 uppercase tracking-widest disabled:cursor-not-allowed text-sm font-normal rounded-none hover:rounded-lg border-2 bg-transparent border-purple hover:drop-shadow-lg hover:bg-purple hover:text-white transition-all"
         >
           {isSubmitting ? "Sending..." : "Submit"}
         </Button>

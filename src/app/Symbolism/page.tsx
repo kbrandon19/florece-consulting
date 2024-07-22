@@ -36,7 +36,7 @@ async function Symbolism() {
 
           </h1>
 
-          <p className="text-seaSalt max-w-screen-lg mx-auto p-5">
+          <p className="text-seaSalt max-w-screen-lg mx-auto mt-8 p-5">
  
             {data.text}
         </p>

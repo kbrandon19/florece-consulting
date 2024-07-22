@@ -17,11 +17,11 @@ async function banner() {
   return (
      <div className="w-full h-auto px-5 py-20 ">
       <BannerReveal>
-        <p className="sm:text-3xl md:text-5xl text-center px-5 max-w-7xl mx-auto font-light italic">
+        <p className="text-4xl md:text-5xl text-center px-5 max-w-7xl mx-auto font-light italic">
           {data.text}
         </p>
-      </BannerReveal
-      ></div>
+      </BannerReveal>
+      </div>
     
   );
 }

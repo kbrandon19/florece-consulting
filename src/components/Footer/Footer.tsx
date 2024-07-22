@@ -17,9 +17,9 @@ export default async function Footer() {
   const data: FooterSec = await getData();
 
   return (
-    <div className="h-auto w-full mt-12 bg-seaSalt pt-12">
+    <div className="h-auto w-full bg-lavender pt-12">
       <div className="w-5/6 h-auto mx-auto py-5 text-black flex flex-wrap flex-col md:grid-cols-3 xl:flex-row  justify-center lg:gap-x-16 xl:gap-x-36 xlg:justify-evenly gap-y-8 xl:gap-y-0">
-        <div className="min-w-64 max-w-72 uppercase lg:text-lg">
+        <div className="min-w-52 max-w-96 uppercase italic lg:text-lg">
           <p className="uppercase">{data.footerquote}</p>
         </div>
         <div>
