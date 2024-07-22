@@ -16,7 +16,7 @@ const FormDataSchema = z.object({
     .string()
     .min(1, { message: "Email is required" })
     .email("Invalid email."),
-  services: z.string({ required_error: "Please select a service to display." }),
+  services: z.string().min(1, { message: "Please select a service." }),
   message: z
     .string()
     .min(1, { message: "Message is required." })
@@ -105,26 +105,29 @@ function ContactForm() {
             {...register("services")}
             className="w-full rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2  tracking-widest py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
           >
-            <option value="">--Please choose an service--</option>
-            <option value="Strategic Communications Planning">
-              Strategic Communications Planning
+            <option value="" disabled selected>-- Please choose a service --</option>
+            <option value="Strategic Communications">
+              Strategic Communications
             </option>
             <option value="Media Relations and Press Outreach">
               Media Relations and Press Outreach
             </option>
-            <option value="Crisis Communication Management">
-              Crisis Communication Management
+            <option value="Community Outreach and Advocacy">
+              Community Outreach and Advocacy
             </option>
-            <option value="Diversity, Equity, and Inclusion (DEI) Training and Consulting">
-              Diversity, Equity, and Inclusion (DEI) Training and Consulting
+            <option value="Training and Workshops">
+              Training and Workshops
+            </option>
+            <option value="Specialized NonProfit Consulting">
+              Specialized NonProfit Consulting
             </option>
           </select>
+          {errors.services?.message && (
+            <p className="mt-2 text-sm text-red-400 tracking-widest">
+              {errors.services.message}
+            </p>
+          )}
         </div>
-        {errors.services?.message && (
-          <p className="mt-2 text-sm text-red-400 tracking-widest">
-            {errors.services.message}
-          </p>
-        )}
 
         {/* message */}
         <div className="md:col-span-2 md:row-start-4">

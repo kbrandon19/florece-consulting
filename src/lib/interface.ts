@@ -64,6 +64,7 @@ export interface Symbol {
 
 export interface FooterSec {
   footerquote: string;
+  quoteAuth: string;
   tag: string;
   email: string;
   socialMediaText: string;
@@ -104,4 +105,13 @@ export interface contactSection {
   contactTitle: string;
   contactHeading: string;
   contactImage: Image;
+}
+
+
+// Booking Calendar
+
+export interface  bookingCal{
+  title:string;
+  text:string;
+  button:string;
 }

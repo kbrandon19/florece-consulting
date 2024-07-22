@@ -15,6 +15,13 @@ export const footerType = defineType({
       name: "footerquote",
       title: "Footer Quote",
       type: "string",
+      description:'Optional'
+    }),
+    defineField({
+      name: "quoteAuth",
+      title: "Footer Quote Author",
+      type: "string",
+      description:'Optional'
     }),
     defineField({
       name: "tag",

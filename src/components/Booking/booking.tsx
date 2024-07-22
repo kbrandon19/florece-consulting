@@ -1,25 +1,41 @@
 import React from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { client } from "../../../sanity/lib/client";
+import { bookingCal } from "@/lib/interface";
 
-function booking() {
+async function getData() {
+  const query = `
+ *[_type == 'calendar']{
+    title,
+    text,
+    button
+  }`;
+
+  const data = await client.fetch(query);
+  return data[0];
+}
+
+
+async function booking() {
+
+  const data: bookingCal = await getData();
   return (
     <div className="w-full h-auto bg-lavender my-20 py-20 text-center">
       <div className="w-5/6 h-auto mx-auto flex flex-col gap-y-2 justify-center content-center font-regular drop-shadow-lg tracking-wider max-w-screen-md">
         <h1 className="font-semibold text-5xl">
-          Ready to amplify your impact?
+          {data.title}
         </h1>
 
         <p className="text-2xl md:text-3xl  ">
-          Book a consultation with florece Consulting today and let&apos;s start
-          transforming your communication strategy!
+          {data.text}
         </p>
       </div>
 
       <div className="w-5/6 h-auto mx-auto flex justify-center items-center mt-10">
         <Dialog>
           <DialogTrigger asChild>
-            <Button className="border-2 border-charcoal text-seaSalt rounded-none hover:rounded-lg hover:border-purple uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt bg-charcoal hover:bg-purple transition-all">Book a consultation call</Button>
+            <Button className="border-2 border-charcoal text-seaSalt rounded-none hover:rounded-lg hover:border-purple uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt bg-charcoal hover:bg-purple transition-all">{data.button}</Button>
           </DialogTrigger>
           <DialogContent className="max-w-screen-xl">
             <iframe

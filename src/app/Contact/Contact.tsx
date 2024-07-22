@@ -21,12 +21,12 @@ async function Contact() {
   const data: contactSection = await getData();
 
   return (
-    <div className="w-full h-auto -mt-10 bg-charcoal text-seaSalt py-20">
+    <div className="w-full h-fit bg-charcoal text-seaSalt ">
       <div
         id="Contact"
-        className="w-5/6 h-auto mx-auto py-5 flex flex-col lg:flex-row gap-4 justify-between "
+        className="w-full h-auto flex flex-col lg:flex-row gap-4 justify-between "
       >
-        <div className="flex item-center flex-col gap-y-10 lg:gap-y-26 w-full  justify-center content-center lg:basis-3/5 mx-auto p-5 lg:px-10 ">
+        <div className="flex flex-col w-full mt-20 gap-y-10 lg:gap-y-26 justify-center lg:basis-3/5 mx-auto p-5 lg:px-10 ">
           <h1 className="text-5xl lg:text-6xl">{data.contactTitle}</h1>
           <p className="font-regular text-xl lg:text-2xl">
             {data.contactHeading}
@@ -35,13 +35,16 @@ async function Contact() {
             <ContactForm />
           </div>
         </div>
+
         <div className="hidden lg:flex lg:items-center">
           <Image
-            height={1000}
-            width={500}
+            height={0}
+            width={0}
             src={urlForImage(data.contactImage)}
             alt="image"
             priority
+            sizes="100vh"
+            style={{ width: "auto", height: "100%" }}
           />
         </div>
       </div>
