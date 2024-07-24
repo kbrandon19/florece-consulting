@@ -42,11 +42,32 @@ export interface Consulting {
   image: Image;
   tagline: string;
   headline: string;
+  blockText: Block[];
   bodyTextOne: string;
   bodyTextTwo: string;
   serviceHeadline: string;
   servicesInfo: servicesArr[];
 }
+
+//Block
+export interface Block {
+  _key: string;
+  _type: string;
+  children: Array<{
+    _key: string;
+    _type: string;
+    marks: string[];
+    text: string;
+  }>;
+  markDefs: Array<{
+    _key: string;
+    _type: string;
+    [key: string]: any; // You can define specific fields if known
+  }>;
+  style: string;
+  [key: string]: any; // To handle any additional fields that might be present
+}
+
 
 export interface servicesArr {
   serviceIcon: Image;
@@ -81,6 +102,7 @@ export interface socialAcc {
 
 export interface aboutSection {
   title: string;
+  blockText: Block[];
   bodyTextOne: string;
   bodyTextTwo: string;
   image: Image;

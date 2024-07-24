@@ -11,6 +11,12 @@ export const aboutType = defineType({
       type: "string",
     }),
     defineField({
+      name:'blockText',
+      title:'Block Text',
+      type:'array',
+      of: [{type: 'block'}]
+  }),
+    defineField({
       name: "bodyTextOne",
       title: "Body Text One",
       type: "string",

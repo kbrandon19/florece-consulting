@@ -19,8 +19,8 @@ function Page() {
     <div>
 
        <ComingSoon /> 
-
-    {/* <Hero />
+{/* 
+    <Hero />
       <SpacerLg/>
       <Banner/>
      <SpacerLg/>
