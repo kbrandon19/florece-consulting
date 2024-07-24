@@ -18,13 +18,17 @@ export default async function Footer() {
 
   return (
     <div className="h-auto w-full bg-lavender pt-12">
-      <div className="w-5/6 h-auto mx-auto py-5 text-black flex flex-wrap flex-col md:grid-cols-3 xl:flex-row  justify-center lg:gap-x-16 xl:gap-x-36 xlg:justify-evenly gap-y-8 xl:gap-y-0">
-        <div className="min-w-52 max-w-lg uppercase italic lg:text-lg">
-          <p className="uppercase">{data.footerquote}</p>
-          <p className="uppercase">{data.quoteAuth}</p>
+      <div className="w-5/6 h-auto mx-auto py-5 text-black flex flex-col md:grid-cols-3 xl:flex-row  justify-center lg:gap-x-16 xl:gap-x-36 gap-y-8 xl:gap-y-0 ">
+
+      {/* Quote */}
+        <div className="min-w-52 max-w-sm  italic p-2 text-lg ">
+          <p className="">{data.footerquote}</p>
+          <p className="font-semibold">- {data.quoteAuth}</p>
         </div>
-        <div>
-          <p className="uppercase tracking-wider font-semibold mb-2">
+
+        {/* Email */}
+        <div className="p-2 text-md">
+          <p className="uppercase tracking-wider font-semibold mb-2 ">
             {data.tag}
           </p>
           <Link
@@ -34,14 +38,17 @@ export default async function Footer() {
             {data.email}
           </Link>
         </div>
-        <div>
-          <p className="uppercase tracking-wider font-semibold mb-2">
+
+        {/* social media sec */}
+        <div className="p-2">
+          <p className="min-w-52 uppercase tracking-wider font-semibold mb-2">
             {data.socialMediaText}
           </p>
           <FooterLinks />
         </div>
       </div>
 
+      {/* Copyright stuff */}
       <div className="w-5/6 h-auto mx-auto py-5 xl:text-center text-black">
         <p className="text-xs">
           2024 Copyright All Rights Reserved. <br className="md:hidden" />

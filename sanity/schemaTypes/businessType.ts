@@ -33,16 +33,6 @@ export const businessType = defineType ({
         of: [{type: 'block'}]
     }),
     defineField({
-        name:'bodyTextOne',
-        title:'Body Text',
-        type:'string'
-    }),
-    defineField({
-        name:'bodyTextTwo',
-        title:'Body Text',
-        type:'string'
-    }),
-    defineField({
         name:'serviceHeadline',
         title:'Service Headline',
         type:'string'

@@ -17,16 +17,6 @@ export const aboutType = defineType({
       of: [{type: 'block'}]
   }),
     defineField({
-      name: "bodyTextOne",
-      title: "Body Text One",
-      type: "string",
-    }),
-    defineField({
-      name: "bodyTextTwo",
-      title: "Body Text Two",
-      type: "string",
-    }),
-    defineField({
       name: "image",
       title: "Profile Image",
       type: "image",

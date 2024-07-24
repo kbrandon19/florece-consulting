@@ -19,17 +19,15 @@ function Page() {
     <div>
 
        <ComingSoon /> 
-{/* 
-    <Hero />
+
+    {/* <Hero />
       <SpacerLg/>
       <Banner/>
      <SpacerLg/>
         <Business />
       <SpacerLg/>
       <Services />
-      <SpacerLg/>
       <Booking/>
-      <SpacerLg/>
       <About />
       <SpacerMd/>
       <FeaturedWork />

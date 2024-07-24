@@ -15,8 +15,6 @@ async function getData() {
         tagline,
         headline,
         blockText,
-        bodyTextOne,
-        bodyTextTwo,
         'image':image.asset->url,
         }`;
   const data = await client.fetch(query);
@@ -40,7 +38,6 @@ async function Business() {
               // width={500}
               height={0}
               width={0}
-              priority
               src={urlForImage(data.image)}
               alt="image"
               sizes="100vw"
@@ -63,7 +60,6 @@ async function Business() {
               width={500}
               // height={0}
               // width={0}
-              priority
               src={urlForImage(data.image)}
               alt="image"
               sizes="100vw"

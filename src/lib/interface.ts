@@ -43,8 +43,6 @@ export interface Consulting {
   tagline: string;
   headline: string;
   blockText: Block[];
-  bodyTextOne: string;
-  bodyTextTwo: string;
   serviceHeadline: string;
   servicesInfo: servicesArr[];
 }
@@ -103,8 +101,6 @@ export interface socialAcc {
 export interface aboutSection {
   title: string;
   blockText: Block[];
-  bodyTextOne: string;
-  bodyTextTwo: string;
   image: Image;
 }
 

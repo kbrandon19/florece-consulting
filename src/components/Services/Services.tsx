@@ -4,6 +4,7 @@ import { Consulting } from "@/lib/interface";
 import Image from "next/image";
 import { urlForImage } from "../../../sanity/lib/image";
 import { Reveal } from "@/transitions/reveal";
+import SpacerXs from "../Spacer/Xs";
 
 // Icons made by Kiranshastry from Flat Icon at https://www.flaticon.com/authors/kiranshastry
 
@@ -21,7 +22,7 @@ async function Services() {
   const data: Consulting = await getData();
   return (
      <Reveal>
-      <div id="Services" className="services w-full h-100vh">
+      <div id="Services" className="services w-full h-auto py-20">
      
         <p className="text-xl md:text-2xl text-center px-5 mb-10 max-w-4xl mx-auto font-light">
           {data.serviceHeadline}
@@ -51,6 +52,7 @@ async function Services() {
             </div>
           ))}
         </div>
+        <SpacerXs/>
       </div>
       </Reveal>
   );
