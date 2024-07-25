@@ -31,12 +31,12 @@ async function Symbolism() {
         </div>
 
         <div className="w-auto mt-8">
-          <h1 className=" w-26 text-seaSalt text-5xl lg:text-6xl  text-center font-medium lowercase align-center drop-shadow-lg tracking-wider">
+          <h1 className=" w-26 text-white text-5xl lg:text-6xl  text-center font-medium lowercase align-center drop-shadow-lg tracking-wider">
           {data.title}
 
           </h1>
 
-          <p className="text-seaSalt max-w-screen-lg mx-auto mt-8 p-5">
+          <p className="text-white max-w-screen-lg mx-auto mt-8 p-5">
  
             {data.text}
         </p>

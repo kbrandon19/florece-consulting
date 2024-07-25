@@ -49,7 +49,7 @@ async function Business() {
       
 
             <div className="w-64 h-auto my-5">
-              <Button className="border-2 border-charcoal text-charcoal rounded-none hover:rounded-lg hover:border-purple uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt hover:bg-purple transition-all"><Link href='/Symbolism'>More about Florece</Link></Button>
+              <Button className="border-2 border-charcoal text-charcoal rounded-none hover:rounded-lg hover:border-plum uppercase tracking-wide hover:drop-shadow-lg hover:text-white hover:bg-plum transition-all"><Link href='/Symbolism'>More about Florece</Link></Button>
               
             </div>
           </div>

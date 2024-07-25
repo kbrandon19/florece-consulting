@@ -145,7 +145,7 @@ function ContactForm() {
 
         <Button
           disabled={isSubmitting}
-          className="flex justify-center content-center h-10 px-4 py-2 w-24 mt-10 max-w-44 uppercase tracking-widest disabled:cursor-not-allowed text-sm font-normal rounded-none hover:rounded-lg border-2 bg-transparent border-purple hover:drop-shadow-lg hover:bg-purple hover:text-white transition-all"
+          className="flex justify-center content-center h-10 px-4 py-2 w-24 mt-10 max-w-44 uppercase tracking-widest disabled:cursor-not-allowed text-sm font-normal rounded-none hover:rounded-lg border-2 bg-transparent border-plum hover:drop-shadow-lg hover:bg-plum hover:text-white transition-all"
         >
           {isSubmitting ? "Sending..." : "Submit"}
         </Button>

@@ -36,13 +36,13 @@ async function ComingSoon() {
         </div>
 
         <div className="align-center w-auto">
-          <p className=" w-26 text-seaSalt text-2xl md:text-5xl lg:text-7xl flex justify-center content-center font-medium lowercase drop-shadow-lg tracking-wider">
+          <p className=" w-26 text-white text-2xl md:text-5xl lg:text-7xl flex justify-center content-center font-medium lowercase drop-shadow-lg tracking-wider">
             {data.title}
           </p>
         </div>
 
         <div className="w-5/6 h-auto mx-auto text-center mt-16">
-          <p className="text-md text-seaSalt lg:text-2xl drop-shadow-lg font-semi lowercase tracking-wide">
+          <p className="text-md text-white lg:text-2xl drop-shadow-lg font-semi lowercase tracking-wide">
             {data.headline}
           </p>
         </div>

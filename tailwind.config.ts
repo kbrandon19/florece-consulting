@@ -11,21 +11,18 @@ const config = {
   prefix: "",
   theme: {
     colors: {
-      white: "#ffffff",
-      seaSalt: "#FAF9F9",
+      
+      white: "#FAF9F9",
       black: "#0A0A0A",
       charcoal: "#353A47",
       lavender: "#ECDEE8",
       cambridgeBlue: "#89B0AE",
-      purple: "#E0A1D1",
+      plum: "#E0A1D1", //change to PLUM
 
       // Form Colors
       'red-400':'#EF5350',
       'blue':'rgb(59 130 246)'
 
-
-      // orchid: "rgb(249,244,232)",
-      // "accent-appricot": "#FFD6BA",
     },
     container: {
       center: true,

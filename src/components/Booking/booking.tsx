@@ -39,7 +39,7 @@ async function booking() {
       <div className="w-5/6 h-auto mx-auto flex justify-center items-center mt-10">
         <Dialog>
           <DialogTrigger asChild>
-            <Button className="border-2 border-charcoal text-seaSalt rounded-none hover:rounded-lg hover:border-purple uppercase tracking-wide hover:drop-shadow-lg hover:text-seaSalt bg-charcoal hover:bg-purple transition-all">{data.button}</Button>
+            <Button className="border-2 border-charcoal text-white rounded-none hover:rounded-lg hover:border-plum uppercase tracking-wide hover:drop-shadow-lg hover:text-white bg-charcoal hover:bg-plum transition-all">{data.button}</Button>
           </DialogTrigger>
           <DialogContent className="max-w-screen-xl">
             <iframe

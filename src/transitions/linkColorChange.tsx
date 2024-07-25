@@ -30,7 +30,7 @@ const LinkColor: React.FC<Props> = ({ children }) => {
 
   return (
     <div
-      className={` ${header ? "bg-seaSalt border-charcoal" : "border-seaSalt"}`}
+      className={` ${header ? "bg-white border-charcoal" : "border-white"}`}
     >
       {children}
     </div>

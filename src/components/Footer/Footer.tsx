@@ -33,7 +33,7 @@ export default async function Footer() {
           </p>
           <Link
             href={`mailto:${data.email}`}
-            className="hover:text-purple transition-colors"
+            className="hover:text-plum transition-colors"
           >
             {data.email}
           </Link>
