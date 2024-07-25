@@ -23,7 +23,7 @@ async function About() {
   const data: aboutSection = await getData();
 
   return (
-<div className="w-full h-fit  text-black ">
+<div className="w-full h-fit  text-white bg-charcoal">
     <div
       id=""
       className="w-full h-auto flex flex-col lg:flex-row gap-4 justify-between "
