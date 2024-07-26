@@ -18,9 +18,9 @@ function Page() {
   return (
     <div>
 
-       <ComingSoon /> 
+       {/* <ComingSoon />  */}
 
-    {/* <Hero />
+    <Hero />
       <SpacerMd/>
       <Banner/>
      <SpacerMd/>
@@ -32,7 +32,7 @@ function Page() {
       <SpacerMd/>
       <FeaturedWork />
       <SpacerLg/>
-      <Contact /> */}
+      <Contact />
     </div>
   );
 }

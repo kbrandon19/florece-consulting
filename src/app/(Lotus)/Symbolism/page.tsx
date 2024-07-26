@@ -1,8 +1,8 @@
 
 
 import { Symbol } from "@/lib/interface";
-import { client } from "../../../sanity/lib/client";
-import { urlForImage } from "../../../sanity/lib/image";
+import { client } from "../../../../sanity/lib/client";
+import { urlForImage } from "../../../../sanity/lib/image";
 import Image from "next/image";
 import Link from "next/link";
 import Transition from "@/transitions/transition";
