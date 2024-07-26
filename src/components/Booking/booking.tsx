@@ -5,6 +5,7 @@ import { client } from "../../../sanity/lib/client";
 import { bookingCal } from "@/lib/interface";
 import SpacerSm from "../../components/Spacer/Sm";
 import SpacerXS from "../Spacer/Xs";
+import { Reveal } from "@/transitions/reveal";
 
 async function getData() {
   const query = `
@@ -26,6 +27,7 @@ async function booking() {
     
     <div className="w-full h-auto bg-lavender py-20 text-center">
       <SpacerXS/>
+ 
       <div className="w-5/6 h-auto mx-auto flex flex-col gap-y-2 justify-center content-center font-regular drop-shadow-lg tracking-wider max-w-screen-md">
         <h1 className="font-semibold text-5xl">
           {data.title}
@@ -52,6 +54,7 @@ async function booking() {
           </DialogContent>
         </Dialog>
       </div>
+ 
       <SpacerXS/>
     </div>
   );

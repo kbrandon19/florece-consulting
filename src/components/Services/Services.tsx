@@ -21,15 +21,16 @@ async function getData() {
 async function Services() {
   const data: Consulting = await getData();
   return (
-     <Reveal>
-      <div id="Services" className="services w-full h-auto py-20">
-     
-        <p className="text-xl md:text-2xl text-center px-5 mb-10 max-w-4xl mx-auto font-light">
-          {data.serviceHeadline}
-        </p>
-      
-      <hr className="max-w-96 h-2 align-center mx-auto my-16" />
-      
+    <div id="Services" className="services w-full h-auto pb-20 pt-36">
+      <Reveal>
+        <div>
+          <p className="text-xl md:text-2xl text-center px-5 mb-10 max-w-4xl mx-auto font-light">
+            {data.serviceHeadline}
+          </p>
+          <hr className="max-w-96 h-2 align-center mx-auto my-16" />
+        </div>
+      </Reveal>
+      <Reveal>
         <div className="w-full h-auto xl:px-5 flex flex-wrap gap-5 items-center justify-center  mx-auto ">
           {data.servicesInfo.map((service: any, idx: any) => (
             <div
@@ -52,9 +53,9 @@ async function Services() {
             </div>
           ))}
         </div>
-        <SpacerXs/>
-      </div>
       </Reveal>
+      <SpacerXs />
+    </div>
   );
 }
 

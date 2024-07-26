@@ -23,48 +23,47 @@ async function About() {
   const data: aboutSection = await getData();
 
   return (
-<div className="w-full h-fit  text-white bg-charcoal">
-    <div
-      id="Founder"
-      className="w-full h-auto flex flex-col lg:flex-row gap-4 justify-between "
-    > 
-    <div className="hidden lg:flex lg:items-center">
-        <Image
-          height={0}
-          width={0}
-          src={urlForImage(data.image)}
-          alt="image"
-          priority
-          sizes="100vh"
-          style={{ width: "100%", height: "auto" }}
-        />
+    <div className="w-full h-auto  text-white bg-charcoal ">
+      <Reveal><div
+        id="Founder"
+        className="w-full h-auto flex flex-col lg:flex-row gap-4 justify-between pt-24"
+      >
+        
+          <div className="hidden lg:flex lg:items-center">
+            <Image
+              height={0}
+              width={0}
+              src={urlForImage(data.image)}
+              alt="image"
+              priority
+              sizes="100vh"
+              style={{ width: "auto", height: "100%" }}
+            />
+          </div>
+        
+        
+          <div className="flex flex-col w-full mt-10 gap-y-10 lg:gap-y-26 justify-center lg:basis-3/5 mx-auto p-5 lg:px-10">
+            <h1 className="text-6xl lg:text-7xl">{data.title}</h1>
+
+            <div className="flex lg:hidden">
+              <Image
+                height={0}
+                width={0}
+                src={urlForImage(data.image)}
+                alt="image"
+                priority
+                sizes="100vh"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <PortableText
+              value={data.blockText}
+              components={RichTextComponents}
+            />
+          </div>
+        
+      </div></Reveal>
     </div>
-
-      <div className="flex flex-col w-full mt-10 gap-y-10 lg:gap-y-26 justify-center lg:basis-3/5 mx-auto p-5 lg:px-10">
-      <h1 className="text-6xl lg:text-7xl">{data.title}</h1>
-
-      <div className="flex lg:hidden">
-      <Image
-          height={0}
-          width={0}
-          src={urlForImage(data.image)}
-          alt="image"
-          priority
-          sizes="100vh"
-          style={{ width: "100%", height: "auto" }}
-        />
-      </div>
-          <PortableText
-            value={data.blockText}
-            components={RichTextComponents}
-          />
-
-      </div>
-
-     
-    </div>
-  </div>  
-
   );
 }
 

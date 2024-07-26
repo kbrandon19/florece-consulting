@@ -4,7 +4,7 @@ import About from "./About/About";
 import Contact from "./Contact/Contact";
 import ComingSoon from "./ComingSoon/ComingSoon";
 
-import Services from "../components/Services/Services";
+import Services from "../components/Services/Services"
 import FeaturedWork from "./FeaturedWork/FeaturedWork";
 import Banner from '../components/Banner/banner'
 import Booking from '../components/Booking/booking'
@@ -21,11 +21,11 @@ function Page() {
        <ComingSoon /> 
 
     {/* <Hero />
-      <SpacerLg/>
+      <SpacerMd/>
       <Banner/>
-     <SpacerLg/>
+     <SpacerMd/>
         <Business />
-      <SpacerLg/>
+      <SpacerMd/>
       <Services />
       <Booking/>
       <About />

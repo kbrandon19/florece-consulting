@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 import Providers from "../lib/providers";
 import HeaderRemove from "../lib/headerRemove";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 
 const poppins = Poppins({
@@ -32,6 +33,7 @@ export default function RootLayout({
        {/* <HeaderRemove/> */}
        {/* <Header/> */}
         <Providers>
+        <GoogleTagManager gtmId="G-7YTPM3Z29P" />
           {children}
           <SpeedInsights />
         </Providers>

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "../../transitions/reveal";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "@/components/RichTextComponents";
+import {TranFlorece} from '../../transitions/tranFlorece'
 
 async function getData() {
   const query = `
@@ -25,10 +26,11 @@ async function Business() {
   const data: Consulting = await getData();
 
   return (
-    <div id="About" className="w-full h-auto bg-lavender py-20">
-      <Reveal>
+    <TranFlorece>
+    <div id="About" className="w-full h-auto bg-lavender pb-20 pt-28">
+      
         <div className="w-5/6  h-auto mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-x-10">
-
+        <Reveal>
           <div className="w-full h-auto my-2 flex flex-col gap-y-5">
             <h1 className="text-6xl">{data.headline}</h1>
 
@@ -53,22 +55,26 @@ async function Business() {
               
             </div>
           </div>
-
+          </Reveal>
+          
+          <Reveal>
           <div className=" w-full h-auto hidden md:block md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-3 my-2">
             <Image
-              height={700}
-              width={500}
-              // height={0}
-              // width={0}
+              // height={600}
+              // width={500}
+              height={0}
+              width={0}
               src={urlForImage(data.image)}
               alt="image"
               sizes="100vw"
               style={{width:'100%',height:'auto'}}
             />
           </div>
+          </Reveal>
         </div>
-      </Reveal>
+      
     </div>
+    </TranFlorece>
   );
 }
 

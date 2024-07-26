@@ -26,7 +26,7 @@ async function Header() {
   return (
     <Transition>
       <div className=" py-5 px-5 md:px-16 flex justify-between content-center ">
-        <div className="h-auto flex flex-row lowercase tracking-widest items-center justify-center gap-3 ">
+        <div className="h-auto flex flex-row lowercase tracking-widest items-center justify-center gap-2 ">
           <Link href="/">
             <Image
               height={35}
