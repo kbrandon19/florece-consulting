@@ -25,7 +25,7 @@ async function About() {
   return (
 <div className="w-full h-fit  text-white bg-charcoal">
     <div
-      id=""
+      id="Founder"
       className="w-full h-auto flex flex-col lg:flex-row gap-4 justify-between "
     > 
     <div className="hidden lg:flex lg:items-center">

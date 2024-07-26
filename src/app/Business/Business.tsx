@@ -25,7 +25,7 @@ async function Business() {
   const data: Consulting = await getData();
 
   return (
-    <div id="About" className="w-full h-100">
+    <div id="About" className="w-full h-auto bg-lavender py-20">
       <Reveal>
         <div className="w-5/6  h-auto mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-x-10">
 
