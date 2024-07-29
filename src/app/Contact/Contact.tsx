@@ -26,7 +26,7 @@ async function Contact() {
         id="Contact"
         className="w-full h-auto flex flex-col lg:flex-row gap-4 justify-between "
       >
-        <div className="flex flex-col w-full mt-10 gap-y-10 lg:gap-y-26 justify-center lg:basis-3/5 mx-auto p-5 lg:px-10">
+        <div className="flex flex-col w-full mt-10 gap-y-10 lg:gap-y-6 justify-center lg:basis-3/5 mx-auto p-5 lg:px-10 pt-16 2xl:pt-0">
           <h1 className="text-5xl lg:text-6xl">{data.contactTitle}</h1>
           <p className="font-regular text-xl lg:text-2xl">
             {data.contactHeading}

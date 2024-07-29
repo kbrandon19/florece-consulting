@@ -4,7 +4,7 @@ import { Consulting } from "@/lib/interface";
 import Image from "next/image";
 import { urlForImage } from "../../../sanity/lib/image";
 import { Reveal } from "@/transitions/reveal";
-import SpacerXs from "../Spacer/Xs";
+import SpacerMd from "../Spacer/Md";
 
 // Icons made by Kiranshastry from Flat Icon at https://www.flaticon.com/authors/kiranshastry
 
@@ -31,11 +31,11 @@ async function Services() {
         </div>
       </Reveal>
       <Reveal>
-        <div className="w-full h-auto xl:px-5 flex flex-wrap gap-5 items-center justify-center  mx-auto ">
+        <div className="w-full h-auto xl:px-5 flex flex-wrap gap-3 items-center justify-center  mx-auto ">
           {data.servicesInfo.map((service: any, idx: any) => (
             <div
               key={idx}
-              className="h-80 w-80 bg-cambridgeBlue flex justify-center lg:justify-start flex-col py-4 lg:py-10 px-5 hover:bg-lavender hover:drop-shadow-lg transition-all gap-5 relative"
+              className="h-80 w-80 bg-cambridgeBlue flex justify-center lg:justify-start flex-col py-4 lg:py-10 px-5 hover:bg-lavender hover:drop-shadow-lg transition-all gap-4"
             >
               <div className="w-auto h-auto flex justify-center">
                 <Image
@@ -54,7 +54,7 @@ async function Services() {
           ))}
         </div>
       </Reveal>
-      <SpacerXs />
+      <SpacerMd />
     </div>
   );
 }
