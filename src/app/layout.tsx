@@ -4,10 +4,8 @@ import "./globals.css";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Providers from "../lib/providers";
-import HeaderRemove from "../lib/headerRemove";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleTagManager } from '@next/third-parties/google'
-
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -29,15 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-      
-       {/* <HeaderRemove/> */}
-       {/* <Header/> */}
+        <Header />
         <Providers>
-        <GoogleTagManager gtmId="G-7YTPM3Z29P" />
+          <GoogleTagManager gtmId="G-7YTPM3Z29P" />
           {children}
           <SpeedInsights />
         </Providers>
-        {/* <Footer/> */}
+        <Footer />
       </body>
     </html>
   );
