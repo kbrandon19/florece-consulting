@@ -27,7 +27,7 @@ async function Business() {
 
   return (
     <TranFlorece>
-    <div id="About" className="w-full h-auto bg-lavender pb-20 pt-28">
+    <div id="About" className="w-full h-auto bg-lavender py-28">
       
         <div className="w-5/6  h-auto mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-x-10">
         <Reveal>
@@ -43,6 +43,7 @@ async function Business() {
               src={urlForImage(data.image)}
               alt="image"
               sizes="100vw"
+              priority
               style={{width:'100%',height:'auto'}}
             />
           </div>

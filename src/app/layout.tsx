@@ -31,13 +31,13 @@ export default function RootLayout({
       <body className={poppins.className}>
       
        {/* <HeaderRemove/> */}
-       <Header/>
+       {/* <Header/> */}
         <Providers>
         <GoogleTagManager gtmId="G-7YTPM3Z29P" />
           {children}
           <SpeedInsights />
         </Providers>
-        <Footer/>
+        {/* <Footer/> */}
       </body>
     </html>
   );

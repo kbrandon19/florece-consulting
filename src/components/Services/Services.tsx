@@ -23,8 +23,8 @@ async function Services() {
   return (
     <div id="Services" className="services w-full h-auto pb-20 pt-36">
       <Reveal>
-        <div>
-          <p className="text-xl md:text-2xl text-center px-5 mb-10 max-w-4xl mx-auto font-light">
+        <div className="px-5">
+          <p className="text-xl md:text-2xl text-center mb-10 max-w-4xl mx-auto font-light">
             {data.serviceHeadline}
           </p>
           <hr className="max-w-96 h-2 align-center mx-auto my-16" />
