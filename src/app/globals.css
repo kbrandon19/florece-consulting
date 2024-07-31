@@ -8,4 +8,13 @@ html {
 
 body {
   background: #faf9f9;
+  overflow-x: hidden;
 }
+
+/* .services{
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(236,222,232,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(236,222,232,1) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(236,222,232,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ecdee8",GradientType=1);
+} */

@@ -18,21 +18,21 @@ function Page() {
   return (
     <div>
 
-       {/* <ComingSoon />  */}
+       <ComingSoon /> 
 
-    <Hero />
+    {/* <Hero />
       <SpacerMd/>
       <Banner/>
      <SpacerMd/>
-        <Business />
-      <SpacerMd/>
-      <Services />
+        <Business /> */}
+      {/* <SpacerMd/>  delete this */}
+      {/* <Services />
       <Booking/>
       <About />
       <SpacerMd/>
       <FeaturedWork />
       <SpacerLg/>
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }
