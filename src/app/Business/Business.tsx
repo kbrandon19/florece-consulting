@@ -27,12 +27,12 @@ async function Business() {
 
   return (
     <TranFlorece>
-    <div id="About" className="w-full h-auto bg-lavender pb-20 pt-28">
+    <div id="About" className="w-full h-auto bg-lavender py-28">
       
         <div className="w-5/6  h-auto mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-x-10">
         <Reveal>
           <div className="w-full h-auto my-2 flex flex-col gap-y-5">
-            <h1 className="text-6xl">{data.headline}</h1>
+            <h1 className="text-6xl lg:text-7xl">{data.headline}</h1>
 
             <div className=" w-full h-auto  md:hidden md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-3 my-2">
             <Image
@@ -43,6 +43,7 @@ async function Business() {
               src={urlForImage(data.image)}
               alt="image"
               sizes="100vw"
+              priority
               style={{width:'100%',height:'auto'}}
             />
           </div>
@@ -58,6 +59,7 @@ async function Business() {
           </Reveal>
           
           <Reveal>
+            {/* desktop image */}
           <div className=" w-full h-auto hidden md:block md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-3 my-2">
             <Image
               // height={600}

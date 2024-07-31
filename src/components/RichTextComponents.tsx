@@ -8,7 +8,7 @@ import PortableText from "react-portable-text"
 export const RichTextComponents = {
     block:{
         normal:({children}:any) => (
-            <p className="text-lg">{children}</p>
+            <p className="text-base xl:text-lg">{children}</p>
         )
     }
 }

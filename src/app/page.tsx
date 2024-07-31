@@ -24,9 +24,9 @@ function Page() {
       <SpacerMd/>
       <Banner/>
      <SpacerMd/>
-        <Business />
-      <SpacerMd/>
-      <Services />
+        <Business /> */}
+      {/* <SpacerMd/>  delete this */}
+      {/* <Services />
       <Booking/>
       <About />
       <SpacerMd/>
