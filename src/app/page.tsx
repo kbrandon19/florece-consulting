@@ -25,7 +25,6 @@ function Page() {
       <Banner/>
      <SpacerMd/>
         <Business /> */}
-      {/* <SpacerMd/>  delete this */}
       {/* <Services />
       <Booking/>
       <About />

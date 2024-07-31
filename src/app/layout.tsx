@@ -27,13 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Header />
+        {/* <Header /> */}
         <Providers>
           <GoogleTagManager gtmId="G-7YTPM3Z29P" />
           {children}
           <SpeedInsights />
         </Providers>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
