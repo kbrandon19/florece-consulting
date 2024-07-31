@@ -4,7 +4,7 @@ import Link from "next/link";
 import { client } from "../../../sanity/lib/client";
 import { Navigation } from "@/lib/interface";
 import { urlForImage } from "../../../sanity/lib/image";
-import Transition from "@/transitions/tranHeader";
+import Transition from "@/transitions/tranHeader-min";
 
 async function getData() {
   const query = `
@@ -34,7 +34,7 @@ async function Header() {
             />
           </Link>
 
-          <div className="w-auto h-auto mt-2">
+          <div className="w-auto h-auto mt-2 text-charcoal">
             <Link href="/">{data.name}</Link>
           </div>
         </div>

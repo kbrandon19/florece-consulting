@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../../../../components/Header/Header-min'
-import Footer from '../../../../components/Footer/Footer'
 
 const SpecificLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -8,7 +7,6 @@ const SpecificLayout = ({ children }: { children: React.ReactNode }) => {
     <div>
       <Header/>
       <main>{children}</main>
-      <Footer/>
     </div>
 
   );
