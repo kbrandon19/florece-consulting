@@ -15,7 +15,7 @@ function notFound() {
             Let&apos;s get you back{" "}
             <Link
               href="/"
-              className="hover:text-plum transition-colors hover:underline hover:drop-shadow-sm"
+              className="hover:text-lavender transition-colors hover:underline hover:drop-shadow-sm"
             >
               home
             </Link>

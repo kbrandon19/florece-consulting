@@ -5,13 +5,15 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Providers from "../lib/providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google"; delete and install if new method works
+import Script from 'next/script'
 
 const poppins = Poppins({
   subsets: ["latin"],
   style: ["normal", "italic"],
   weight: ["400", "500", "600", "700", "800"],
 });
+
 
 export const metadata: Metadata = {
   title: "Florece Consulting",
@@ -26,14 +28,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7YTPM3Z29P"></Script>
+        <Script id="google-analytics">
+          {`
+window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-7YTPM3Z29P'); 
+          `}
+        </Script>
+      </head>
       <body className={poppins.className}>
-        <Header />
+        
         <Providers>
-          <GoogleTagManager gtmId="G-7YTPM3Z29P" />
+          <Header />
+          {/* <GoogleTagManager gtmId='G-7YTPM3Z29P' /> */}
           {children}
           <SpeedInsights />
+          <Footer />
         </Providers>
-        <Footer />
+        
       </body>
     </html>
   );

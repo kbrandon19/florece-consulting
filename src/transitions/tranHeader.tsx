@@ -33,13 +33,15 @@ const Transition: React.FC<Props> = ({ children }) => {
     <div>
       <header
         className={`w-full h-auto fixed top-0 z-10 transition-colors duration-300 ${
-          header ? "bg-white text-charcoal border-charcoal drop-shadow-md" : "text-white bg-transparent"
+          header
+            ? "bg-white text-charcoal border-charcoal drop-shadow-md"
+            : "text-white bg-transparent"
         }`}
       >
         <motion.div
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ ease: "easeIn", duration: 0.75, delay: .3 }}
+          transition={{ ease: "easeIn", duration: 0.75, delay: 0.3 }}
         >
           {children}
         </motion.div>
