@@ -29,7 +29,7 @@ export const BannerReveal = ({ children }: Props) => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         {children}
-        <hr className="max-w-96 h-2 align-center mx-auto my-16" />
+        <hr className="max-w-96 h-2 align-center mx-auto mt-16" />
       </motion.div>
     </div>
   );
