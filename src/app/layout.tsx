@@ -31,9 +31,13 @@ export default function RootLayout({
 
         <meta property='description' content='florece is a dynamic communications and advocacy consultancy with a steadfast commitment to partner with leaders who do the transformational work of justice and liberation.'/>
         <meta property='og:title' content='florece Consulting'/>
+        <meta property='og:site_name' content='florece Consulting'/>
         <meta property='og:image' content='https://res.cloudinary.com/dujkjy2e2/image/upload/v1722490606/LinkedIn_eukyct.png'/>
         <meta property='og:description' content='florece is a dynamic communications and advocacy consultancy with a steadfast commitment to partner with leaders who do the transformational work of justice and liberation. '/>
         <meta property='og:url' content='//www.florececonsulting.com'/>
+        <meta property='og:type' content='website'/>
+        <meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='627' />
       </head>
       <body className={poppins.className}>
         
