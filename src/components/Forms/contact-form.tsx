@@ -105,7 +105,10 @@ function ContactForm() {
             {...register("services")}
             className="w-full rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2  tracking-widest py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
           >
-            <option value="Service Not Selected"> Please select a service...</option>
+            <option value="Service Not Selected">
+              {" "}
+              Please select a service...
+            </option>
             <option value="Strategic Communications">
               Strategic Communications
             </option>

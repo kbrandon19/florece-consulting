@@ -1,14 +1,12 @@
-import React from 'react';
-import Header from '../../../../components/Header/Header-min'
+import React from "react";
+import Header from "../../../../components/Header/Header-min";
 
 const SpecificLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-   
     <div>
-      <Header/>
+      <Header />
       <main>{children}</main>
     </div>
-
   );
 };
 

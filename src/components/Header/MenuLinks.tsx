@@ -19,9 +19,6 @@ async function getData() {
 async function MenuLinks() {
   const data: Navigation = await getData();
 
-
-
-  
   return (
     <div className="md:flex flex-row items-center gap-6">
       {data.navlinks.map((link: any, idx: any) => (

@@ -18,3 +18,19 @@ body {
   background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(236,222,232,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ecdee8",GradientType=1);
 } */
+
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side,#ecdee8 94%,#0000) top/9px 9px no-repeat,
+         conic-gradient(#0000 30%,#ecdee8);
+  animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+  100% {
+     transform: rotate(1turn);
+  }
+}

@@ -29,8 +29,8 @@ async function Hero() {
             priority
           />
         </div>
-        </Transition>
-        <Transition>
+      </Transition>
+      <Transition>
         <div className="align-center w-auto mt-5">
           <h1 className=" w-26 text-white text-7xl 2xl:text-9xl flex justify-center content-center font-medium lowercase drop-shadow-lg tracking-wider">
             {data.text}
