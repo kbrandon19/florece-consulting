@@ -5,8 +5,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Providers from "../lib/providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-// import { GoogleTagManager } from "@next/third-parties/google"; delete and install if new method works
-import Script from 'next/script'
+import { GoogleAnalytics } from "@next/third-parties/google"; 
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,7 +17,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Florece Consulting",
   description:
-    "Florece Consulting offers expert communication services for progressive, women, and BIPOC organizations, including strategic communications planning, media relations, op-ed writing, crisis communication management, and DEI training. Empowering voices and driving change for over five years.",
+    "florece is a dynamic communications and advocacy consultancy with a steadfast commitment to partner with leaders who do the transformational work of justice and liberation.",
 };
 
 export default function RootLayout({
@@ -29,21 +28,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7YTPM3Z29P"></Script>
-        <Script id="google-analytics">
-          {`
-window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-7YTPM3Z29P'); 
-          `}
-        </Script>
+
+        <meta property='description' content='florece is a dynamic communications and advocacy consultancy with a steadfast commitment to partner with leaders who do the transformational work of justice and liberation.'/>
+        <meta property='og:title' content='florece Consulting'/>
+        <meta property='og:image' content='https://res.cloudinary.com/dujkjy2e2/image/upload/v1722490606/LinkedIn_eukyct.png'/>
+        <meta property='og:description' content='florece is a dynamic communications and advocacy consultancy with a steadfast commitment to partner with leaders who do the transformational work of justice and liberation. '/>
+        <meta property='og:url' content='//www.florececonsulting.com'/>
       </head>
       <body className={poppins.className}>
         
         <Providers>
-          <Header />
-          {/* <GoogleTagManager gtmId='G-7YTPM3Z29P' /> */}
+          {/* <Header /> */}
           {children}
+          <GoogleAnalytics gaId="G-7YTPM3Z29P" />
           <SpeedInsights />
-          <Footer />
+          {/* <Footer /> */}
         </Providers>
         
       </body>

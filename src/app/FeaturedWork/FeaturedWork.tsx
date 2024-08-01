@@ -6,6 +6,7 @@ import Image from "next/image";
 import { featuredMediaSection } from "@/lib/interface";
 import { urlForImage } from "../../../sanity/lib/image";
 import { Reveal } from "@/transitions/reveal";
+import SpacerSm from "../../components/Spacer/Sm";
 
 async function getData() {
   const query = `
@@ -25,6 +26,7 @@ async function FeaturedWork() {
 
   return (
     <div className=" w-full h-auto mx-auto text-center">
+      <SpacerSm/>
       <Reveal>
         <div className=" w-5/6 h-auto mx-auto text-center">
           <h1 className="italic text-5xl lg:text-6xl my-6 capitalize break-words font-regular ">
@@ -33,7 +35,7 @@ async function FeaturedWork() {
         </div>
       </Reveal>
       <Reveal>
-        <div className=" max-w-screen-lg mx-auto flex-wrap flex flex-row justify-center gap-10 items-center">
+        <div className=" max-w-screen-lg mx-auto mt-16 flex-wrap flex flex-row justify-center gap-10 items-center">
           {data.mediaSource.map((media: any, idx: any) => (
             <div key={idx} className="h-auto w-auto p-2 content-center">
               <Image

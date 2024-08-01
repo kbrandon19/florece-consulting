@@ -25,7 +25,7 @@ async function getData() {
 async function Services() {
   const data: Consulting = await getData();
   return (
-    <div id="Services" className="services w-full h-auto pb-20 pt-36">
+    <div id="Services" className="services w-full h-auto py-36">
       <Reveal>
         <div className="px-5">
           <p className="text-xl md:text-2xl text-center mb-10 max-w-4xl mx-auto font-light">
@@ -58,7 +58,6 @@ async function Services() {
           ))}
         </div>
       </Reveal>
-      <SpacerMd />
     </div>
   );
 }

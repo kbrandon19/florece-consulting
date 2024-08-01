@@ -22,9 +22,9 @@ export default async function Footer() {
 
   return (
     <div className="h-auto w-full bg-lavender pt-12">
-      <div className="w-5/6 h-auto mx-auto py-5 text-black flex flex-col md:grid-cols-3 xl:flex-row  justify-center lg:gap-x-16 xl:gap-x-36 gap-y-8 xl:gap-y-0 ">
+      <div className="w-5/6 h-auto mx-auto py-5 text-black flex flex-col xl:flex-row  justify-center lg:gap-x-16 xl:gap-x-36 gap-y-8 xl:gap-y-0 ">
         {/* Quote */}
-        <div className="min-w-52 max-w-sm  italic p-2 text-lg ">
+        <div className="w-96 italic text-lg ">
           <p className="">{data.footerquote}</p>
           <p className="font-semibold">- {data.quoteAuth}</p>
         </div>

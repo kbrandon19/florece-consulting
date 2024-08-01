@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Consulting } from "@/lib/interface";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "../../transitions/reveal";
+import { RevealR } from "../../transitions/revealR";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "@/components/RichTextComponents";
 import { TranFlorece } from "../../transitions/tranFlorece";
@@ -62,7 +63,7 @@ async function Business() {
             </div>
           </Reveal>
 
-          <Reveal>
+          <RevealR>
             {/* desktop image */}
             <div className=" w-full h-auto hidden md:block md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-3 my-2">
               <Image
@@ -74,7 +75,7 @@ async function Business() {
                 style={{ width: "100%", height: "auto" }}
               />
             </div>
-          </Reveal>
+          </RevealR>
         </div>
       </div>
     </TranFlorece>

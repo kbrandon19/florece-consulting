@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { client } from "../../../sanity/lib/client";
 import { bookingCal } from "@/lib/interface";
-import SpacerXS from "../Spacer/Xs";
+import SpacerMd from "../Spacer/Md";
 
 
 async function getData() {
@@ -25,8 +25,8 @@ async function getData() {
 async function booking() {
   const data: bookingCal = await getData();
   return (
-    <div className="w-full h-auto bg-lavender py-20 text-center relative">
-      <SpacerXS />
+    <div className="w-full h-auto bg-lavender py-20 text-center px-5">
+      <SpacerMd />
 
       <div className="w-5/6 h-auto mx-auto flex flex-col gap-y-2 justify-center content-center font-regular drop-shadow-lg tracking-wider max-w-screen-md">
         <h2 className="font-semibold text-5xl">{data.title}</h2>
@@ -53,7 +53,7 @@ async function booking() {
         </Dialog>
       </div>
 
-      <SpacerXS />
+      <SpacerMd />
     </div>
   );
 }

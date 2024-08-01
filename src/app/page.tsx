@@ -14,25 +14,20 @@ import Booking from "../components/Booking/booking";
 import SpacerLg from "../components/Spacer/Lg";
 import SpacerMd from "../components/Spacer/Md";
 
-
-
 function Page() {
   return (
     <div>
-      {/* <ComingSoon />  */}
+      <ComingSoon /> 
 
-      <Hero />
-      <SpacerMd />
+      {/* <Hero />
       <Banner />
-      <SpacerMd />
       <Business />
       <Services />
       <Booking />
       <About />
-      <SpacerMd />
       <FeaturedWork />
       <SpacerLg />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }

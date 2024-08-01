@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Transition from "@/transitions/transition";
 import { Button } from "@/components/ui/button";
-import SpacerMd from "@/components/Spacer/Md";
+import SpacerSm from "@/components/Spacer/Sm";
 
 async function getData() {
   const query = `
@@ -27,7 +27,7 @@ async function Symbolism() {
 
   return (
     <div className="w-full h-auto bg-charcoal py-5">
-      <SpacerMd />
+      <SpacerSm />
       <div className="w-26 flex justify-center items-center">
         <Image
           height={200}
