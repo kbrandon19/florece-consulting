@@ -17,9 +17,9 @@ import SpacerMd from "../components/Spacer/Md";
 function Page() {
   return (
     <div>
-      <ComingSoon /> 
+      {/* <ComingSoon />  */}
 
-      {/* <Hero />
+      <Hero />
       <Banner />
       <Business />
       <Services />
@@ -27,7 +27,7 @@ function Page() {
       <About />
       <FeaturedWork />
       <SpacerLg />
-      <Contact /> */}
+      <Contact />
     </div>
   );
 }

@@ -38,11 +38,11 @@ export default function RootLayout({
       <body className={poppins.className}>
         
         <Providers>
-          {/* <Header /> */}
+          <Header />
           {children}
           <GoogleAnalytics gaId="G-7YTPM3Z29P" />
           <SpeedInsights />
-          {/* <Footer /> */}
+          <Footer />
         </Providers>
         
       </body>
