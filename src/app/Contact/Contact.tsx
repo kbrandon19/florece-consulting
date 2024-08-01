@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import React from "react";
 import ContactForm from "../../components/Forms/contact-form";
 import Image from "next/image";
@@ -13,7 +15,9 @@ async function getData() {
     contactImage
   }`;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch(query,{
+    revalidate: new Date().getSeconds(),
+  });
   return data;
 }
 

@@ -1,3 +1,5 @@
+export const revalidate =0;
+
 import React from "react";
 import Link from "next/link";
 import { client } from "../../../sanity/lib/client";
@@ -9,7 +11,9 @@ async function getData() {
   *[_type == 'footer'][0]{
     footerquote,quoteAuth,tag,email,socialMediaText
   }`;
-  const data = await client.fetch(query);
+  const data = await client.fetch(query,{
+    revalidate: new Date().getSeconds(),
+  });
   return data;
 }
 

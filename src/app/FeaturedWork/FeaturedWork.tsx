@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import React from "react";
 import { client } from "../../../sanity/lib/client";
 import Image from "next/image";
@@ -12,7 +14,9 @@ async function getData() {
         mediaSource[]{ mediaName,mediaImage,mediaLink}
     }`;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch(query,{
+    revalidate: new Date().getHours(),
+  });
   return data[0];
 }
 

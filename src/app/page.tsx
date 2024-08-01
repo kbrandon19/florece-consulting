@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import Hero from "../components/Hero/Hero";
 import Business from "./Business/Business";
 import About from "./About/About";
@@ -11,6 +13,8 @@ import Booking from "../components/Booking/booking";
 
 import SpacerLg from "../components/Spacer/Lg";
 import SpacerMd from "../components/Spacer/Md";
+
+
 
 function Page() {
   return (

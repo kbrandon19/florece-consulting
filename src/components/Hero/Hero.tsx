@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import { HeroLanding } from "@/lib/interface";
 import { client } from "../../../sanity/lib/client";
 import { urlForImage } from "../../../sanity/lib/image";
@@ -10,7 +12,9 @@ async function getData() {
     text,
     image
   }`;
-  const data = await client.fetch(query);
+  const data = await client.fetch(query,{
+    revalidate: new Date().getSeconds(),
+  });
   return data[0];
 }
 

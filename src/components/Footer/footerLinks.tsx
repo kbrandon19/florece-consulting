@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import React from "react";
 import { client } from "../../../sanity/lib/client";
 import { FooterSec } from "@/lib/interface";
@@ -10,7 +12,9 @@ async function getData() {
     socialMedia[]{name,url,icon}
   }`;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch(query,{
+    revalidate: new Date().getSeconds(),
+  });
   return data;
 }
 

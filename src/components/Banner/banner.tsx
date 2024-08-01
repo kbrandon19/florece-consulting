@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import React from "react";
 import { Banner } from "@/lib/interface";
 import { client } from "../../../sanity/lib/client";
@@ -8,7 +10,9 @@ async function getData() {
  *[_type == 'banner']{
     text
   }`;
-  const data = await client.fetch(query);
+  const data = await client.fetch(query,{
+    revalidate: new Date().getSeconds(),
+  });
   return data[0];
 }
 

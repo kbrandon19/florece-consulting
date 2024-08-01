@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import React from "react";
 import Image from "next/image";
 import { aboutSection } from "@/lib/interface";
@@ -15,8 +17,10 @@ async function getData() {
       'image':image.asset->url
     }`;
 
-  const data = await client.fetch(query);
-  return data;
+ return await client.fetch(query,{
+    revalidate: new Date().getSeconds(),
+  });
+ 
 
 }
 

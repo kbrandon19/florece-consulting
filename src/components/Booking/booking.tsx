@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import React from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -14,7 +16,9 @@ async function getData() {
     button
   }`;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch(query,{
+    revalidate: new Date().getSeconds(),
+  });
   return data[0];
 }
 

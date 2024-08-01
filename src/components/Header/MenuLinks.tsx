@@ -1,3 +1,5 @@
+export const revalidate =0;
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { client } from "../../../sanity/lib/client";
@@ -12,7 +14,9 @@ async function getData() {
     contactBtn
             }`;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch(query,{
+    revalidate: new Date().getSeconds(),
+  });
   return data[0];
 }
 
