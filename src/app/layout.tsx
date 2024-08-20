@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 import Providers from "../lib/providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from "@next/third-parties/google"; 
+import SmoothScroll from "@/components/SmoothScroll";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -43,7 +44,7 @@ export default function RootLayout({
         
         <Providers>
           <Header />
-          {children}
+          <SmoothScroll>{children}</SmoothScroll>
           <GoogleAnalytics gaId="G-7YTPM3Z29P" />
           <SpeedInsights />
           <Footer />
