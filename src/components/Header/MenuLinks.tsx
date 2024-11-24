@@ -32,8 +32,14 @@ async function MenuLinks() {
               {link.linkname}
             </p>
           </Link>
+          
         </div>
       ))}
+      {/* <div>
+      <Button className="w-24 tracking-wide font-normal rounded-none uppercase bg-transparent border-plum hover:drop-shadow-lg  transition-all">
+          <Link href="/lanzate">Lanzate Event</Link>
+        </Button>
+      </div> */}
       <LinkColor>
         <Button className="w-24 tracking-wide font-normal rounded-none hover:rounded-lg border-2 uppercase bg-transparent border-plum hover:drop-shadow-lg hover:bg-plum hover:text-white transition-all">
           <Link href="#Contact">{data.contactBtn}</Link>
