@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../../../components/Header/Header-min";
+import Header from "../../../../components/Header/Header-min-01";
 import { GoogleAnalytics } from "@next/third-parties/google"; 
 
 const SpecificLayout = ({ children }: { children: React.ReactNode }) => {
