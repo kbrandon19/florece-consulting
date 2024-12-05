@@ -7,6 +7,8 @@ import { client } from "../../../sanity/lib/client";
 import { Navigation } from "@/lib/interface";
 import { urlForImage } from "../../../sanity/lib/image";
 import Transition from "@/transitions/tranHeader-min";
+import LinkColor from "@/transitions/linkColorChange";
+import { Button } from "../ui/button";
 
 async function getData() {
   const query = `
@@ -14,6 +16,7 @@ async function getData() {
     name,
     title,
     logo,
+    contactBtn
             }`;
 
   const data = await client.fetch(query,{
@@ -41,7 +44,16 @@ async function Header() {
           <div className="w-auto h-auto mt-2 text-charcoal">
             <Link href="/">{data.name}</Link>
           </div>
+ 
         </div>
+        <div>
+        <LinkColor>
+        <Button className="w-24 tracking-wide font-normal rounded-none hover:rounded-lg border-2 uppercase bg-transparent border-plum hover:drop-shadow-lg hover:bg-plum hover:text-white transition-all">
+          <Link href="#Contact">{data.contactBtn}</Link>
+        </Button>
+      </LinkColor>
+        </div>
+
       </div>
     </Transition>
   );
