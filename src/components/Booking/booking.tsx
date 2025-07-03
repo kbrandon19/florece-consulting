@@ -43,7 +43,7 @@ async function booking() {
           </DialogTrigger>
           <DialogContent className="max-w-screen-xl">
             <iframe
-              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2GOnYpAfbbxKh_yat5FyvpsP9z0PRS5G0rWwR-9q3_Bkd1CjjJtB9LOeg2Y7l1gz7FPKvlA9T3?gv=true"
+              src="https://calendly.com/florececonsulting/consultation-call"
               loading="lazy"
               allowFullScreen={true}
               width="100%"
