@@ -19,7 +19,12 @@ export const metadata: Metadata = {
   title: "Florece Consulting",
   description:
     "florece is a dynamic communications and advocacy consultancy with a steadfast commitment to partner with leaders who do the transformational work of justice and liberation.",
-};
+keywords: [
+    "communications","advocacy","florece","florece consulting","consultant","comms","justice","liberation","nonprofit"
+  ], icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  }};
 
 export default function RootLayout({
   children,
